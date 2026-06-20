@@ -14,11 +14,15 @@ FLAGS = {
     "NL": "🇳🇱", "SG": "🇸🇬", "RU": "🇷🇺", "DE": "🇩🇪"
 }
 
-# استفاده از یک سرور بدون حساسیت به ربات برای تست سرعت
-TEST_URL = "http://cachefly.cachefly.net/10mb.test"
+# ۳ سورس قدرتمند و معتبر برای تست پهنای باند با فایل‌های حجیم
+TEST_URLS = [
+    "http://cachefly.cachefly.net/10mb.test",
+    "http://speed.cloudflare.com/__down?bytes=15000000",
+    "http://ipv4.download.thinkbroadband.com/10MB.zip"
+]
+
 TIMEOUT = 12
 
-# جعل هویت مرورگر
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 }
@@ -35,30 +39,37 @@ def test_candidate(cand):
         proxy_url = f"{scheme}://{server}:{port}"
 
     proxies = {"http": proxy_url, "https": proxy_url}
+    last_error = ""
 
-    try:
-        start = time.time()
-        # verify=False باعث میشه خطای SSL دامنه‌های فیک رد بشه
-        resp = requests.get(TEST_URL, proxies=proxies, timeout=TIMEOUT, headers=HEADERS, verify=False)
-        resp.raise_for_status()
-        duration = time.time() - start
-        
-        mbps = (len(resp.content) * 8) / duration / 1_000_000
-        cand['speed'] = round(mbps, 1)
-        return cand
-    except Exception as e:
-        cand['speed'] = 0.0
-        # ذخیره نوع خطا برای نمایش در لاگ
-        error_msg = str(e)
-        if "Read timed out" in error_msg:
-            cand['error'] = "Timeout"
-        elif "Max retries exceeded" in error_msg or "Connection refused" in error_msg:
-            cand['error'] = "Connection Failed / Dead Node"
-        elif "403 Client Error" in error_msg:
-            cand['error'] = "Blocked (403)"
-        else:
-            cand['error'] = error_msg[:30] + "..."
-        return cand
+    # لوپ تست ۳ مرحله‌ای
+    for url in TEST_URLS:
+        try:
+            start = time.time()
+            resp = requests.get(url, proxies=proxies, timeout=TIMEOUT, headers=HEADERS, verify=False)
+            resp.raise_for_status()
+            duration = time.time() - start
+            
+            # اگر با موفقیت دانلود شد، سرعت محاسبه شده و تابع پایان می‌یابد
+            mbps = (len(resp.content) * 8) / duration / 1_000_000
+            cand['speed'] = round(mbps, 1)
+            return cand
+            
+        except Exception as e:
+            error_msg = str(e)
+            if "Read timed out" in error_msg:
+                last_error = "Timeout"
+            elif "Max retries exceeded" in error_msg or "Connection refused" in error_msg:
+                last_error = "Connection Failed / Dead Node"
+            elif "403 Client Error" in error_msg:
+                last_error = "Blocked (403)"
+            else:
+                last_error = error_msg[:30] + "..."
+            # در صورت خطا با این لینک، حلقه ادامه پیدا می‌کند و سورس بعدی تست می‌شود
+
+    # اگر تمام سورس‌ها در حلقه بالا شکست خوردند، پراکسی واقعاً آفلاین است
+    cand['speed'] = 0.0
+    cand['error'] = last_error
+    return cand
 
 def main():
     print("Loading vpnlist.yaml...")
@@ -119,6 +130,7 @@ def main():
                 })
 
     print(f"Generated {len(candidate_list)} target servers. Starting Deep Speed Test (Multi-Threaded)...")
+    print(f"Engine will use multi-source fallback (3 URLs) for maximum accuracy.")
     
     successful_cands = []
     with concurrent.futures.ThreadPoolExecutor(max_workers=50) as executor:
