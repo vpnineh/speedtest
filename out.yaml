@@ -1,0 +1,61 @@
+port: 7890
+socks-port: 7891
+allow-lan: false
+mode: rule
+log-level: info
+proxies: []
+proxy-groups:
+- name: 🌍 Select Location
+  type: select
+  proxies:
+  - 🚀 Auto-Best (Global)
+  - 🇺🇸 Auto-US
+  - 🇬🇧 Auto-UK
+  - 🇫🇷 Auto-FR
+  - 🇳🇱 Auto-NL
+  - 🇸🇬 Auto-SG
+  - 🇷🇺 Auto-RU
+  - DIRECT
+- name: 🚀 Auto-Best (Global)
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 Auto-US
+  - 🇬🇧 Auto-UK
+  - 🇫🇷 Auto-FR
+  - 🇳🇱 Auto-NL
+  - 🇸🇬 Auto-SG
+  - 🇷🇺 Auto-RU
+- name: 🇺🇸 Auto-US
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  proxies: []
+- name: 🇬🇧 Auto-UK
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  proxies: []
+- name: 🇫🇷 Auto-FR
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  proxies: []
+- name: 🇳🇱 Auto-NL
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  proxies: []
+- name: 🇸🇬 Auto-SG
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  proxies: []
+- name: 🇷🇺 Auto-RU
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  proxies: []
+rules:
+- MATCH,🌍 Select Location
