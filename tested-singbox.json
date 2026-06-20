@@ -1,0 +1,1917 @@
+{
+  "log": {
+    "level": "info"
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "dns_google",
+        "address": "8.8.8.8",
+        "detour": "🚀 Select Server"
+      },
+      {
+        "tag": "dns_local",
+        "address": "1.1.1.1",
+        "detour": "direct"
+      }
+    ]
+  },
+  "inbounds": [
+    {
+      "type": "tun",
+      "tag": "tun-in",
+      "interface_name": "tun0",
+      "inet4_address": "172.19.0.1/30",
+      "auto_route": true,
+      "strict_route": true,
+      "sniff": true
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "🚀 Select Server",
+      "outbounds": [
+        "[🇺🇸] US - Mackerel 7:56639 - 41.8Mbps",
+        "[🇺🇸] US - Mackerel 7:18035 - 41.6Mbps",
+        "[🇺🇸] US - Mackerel 6:13843 - 40.2Mbps",
+        "[🇺🇸] US - Mackerel 7:52379 - 40.1Mbps",
+        "[🇺🇸] US - Trout East 3:10799 - 39.1Mbps",
+        "[🇺🇸] US - Mackerel 6:14063 - 38.8Mbps",
+        "[🇺🇸] US - Trout West 5:23993 - 37.9Mbps",
+        "[🇺🇸] US - Mackerel 6:51811 - 36.6Mbps",
+        "[🇺🇸] US - Trout West 3:36179 - 34.2Mbps",
+        "[🇺🇸] US - Trout West 4:21229 - 33.2Mbps",
+        "[🇬🇧] UK - Erith 6:12317 - 32.0Mbps",
+        "[🇺🇸] US - Trout East 5:31643 - 29.4Mbps",
+        "[🇺🇸] US - Trout East 4:52837 - 29.2Mbps",
+        "[🇺🇸] US - Trout East 4:10799 - 28.9Mbps",
+        "[🇬🇧] UK - Erith 6:10799 - 28.6Mbps",
+        "[🇬🇧] UK - Erith 4:55881 - 27.8Mbps",
+        "[🇺🇸] US - Trout East 5:10799 - 26.8Mbps",
+        "[🇺🇸] US - Trout East 6:36821 - 26.6Mbps",
+        "[🇬🇧] UK - Erith 4:13407 - 26.5Mbps",
+        "[🇬🇧] UK - Erith 4:20155 - 25.8Mbps",
+        "[🇺🇸] US - Trout East 7:64337 - 25.5Mbps",
+        "[🇫🇷] FR - Camembert 3:55541 - 21.2Mbps",
+        "[🇫🇷] FR - Parisian 3:21157 - 21.0Mbps",
+        "[🇫🇷] FR - Parisian 2:10799 - 20.8Mbps",
+        "[🇫🇷] FR - Parisian 3:47425 - 20.7Mbps",
+        "[🇫🇷] FR - Camembert 3:10799 - 20.6Mbps",
+        "[🇫🇷] FR - Parisian 3:10799 - 20.5Mbps",
+        "[🇫🇷] FR - Parisian 2:63239 - 20.4Mbps",
+        "[🇫🇷] FR - Parisian 2:31921 - 20.4Mbps",
+        "[🇬🇧] UK - Erith 2:49738 - 20.2Mbps",
+        "[🇬🇧] UK - Erith 4:10799 - 20.0Mbps",
+        "[🇬🇧] UK - Erith 3:25583 - 17.6Mbps",
+        "[🇫🇷] FR - Camembert 2:20590 - 17.4Mbps",
+        "[🇺🇸] US - Trout East 6:10799 - 17.1Mbps",
+        "[🇫🇷] FR - Parisian 1:26394 - 17.0Mbps",
+        "[🇫🇷] FR - Parisian 1:10799 - 16.2Mbps",
+        "[🇺🇸] US - Trout East 5:46845 - 15.2Mbps",
+        "[🇫🇷] FR - Camembert 2:10799 - 15.2Mbps",
+        "[🇫🇷] FR - Parisian 1:29390 - 14.9Mbps",
+        "[🇬🇧] UK - Erith 2:39161 - 14.8Mbps",
+        "[🇬🇧] UK - Erith 2:61017 - 14.1Mbps",
+        "[🇺🇸] US - Trout East 7:10799 - 13.9Mbps",
+        "[🇫🇷] FR - Camembert 2:26477 - 13.5Mbps",
+        "[🇬🇧] UK - Erith 3:49723 - 12.2Mbps",
+        "[🇬🇧] UK - Erith 5:10799 - 12.0Mbps",
+        "[🇫🇷] FR - Parisian 1:49303 - 12.0Mbps",
+        "[🇫🇷] FR - Camembert 3:37289 - 8.7Mbps",
+        "[🇬🇧] UK - Erith 2:10799 - 8.5Mbps",
+        "[🇬🇧] UK - Erith 3:10799 - 8.4Mbps",
+        "[🇳🇱] NL - Hollander 3:18351 - 8.3Mbps",
+        "[🇳🇱] NL - Maasdam 6:10799 - 8.2Mbps",
+        "[🇳🇱] NL - Hollander 3:59504 - 7.6Mbps",
+        "[🇳🇱] NL - Maasdam 5:25173 - 6.8Mbps",
+        "[🇳🇱] NL - Maasdam 4:10799 - 6.7Mbps",
+        "[🇳🇱] NL - Maasdam 4:62841 - 6.2Mbps",
+        "[🇳🇱] NL - Hollander 3:10799 - 6.2Mbps",
+        "[🇳🇱] NL - Hollander 8:10799 - 6.0Mbps",
+        "[🇳🇱] NL - Hollander 5:10799 - 5.8Mbps",
+        "[🇬🇧] UK - Erith 5:12610 - 5.7Mbps",
+        "[🇫🇷] FR - Parisian 2:39983 - 5.5Mbps",
+        "[🇫🇷] FR - Camembert 4:42873 - 5.5Mbps",
+        "[🇳🇱] NL - Maasdam 7:10799 - 5.4Mbps",
+        "[🇳🇱] NL - Maasdam 2:10799 - 5.3Mbps",
+        "[🇳🇱] NL - Hollander 6:61965 - 5.3Mbps",
+        "[🇫🇷] FR - Camembert 3:40547 - 5.1Mbps",
+        "[🇫🇷] FR - Camembert 6:10799 - 5.1Mbps",
+        "[🇳🇱] NL - Hollander 6:10799 - 5.1Mbps",
+        "[🇳🇱] NL - Hollander 7:10799 - 5.1Mbps",
+        "[🇳🇱] NL - Maasdam 7:50461 - 5.0Mbps",
+        "[🇫🇷] FR - Camembert 4:10799 - 4.7Mbps",
+        "[🇳🇱] NL - Maasdam 5:38099 - 4.5Mbps",
+        "[🇳🇱] NL - Maasdam 4:26589 - 4.4Mbps",
+        "[🇳🇱] NL - Hollander 8:48191 - 4.4Mbps",
+        "[🇫🇷] FR - Camembert 6:15094 - 4.2Mbps",
+        "[🇳🇱] NL - Maasdam 6:16723 - 4.1Mbps",
+        "[🇳🇱] NL - Hollander 7:43357 - 4.1Mbps",
+        "[🇫🇷] FR - Camembert 3:12635 - 3.9Mbps",
+        "[🇫🇷] FR - Camembert 5:22921 - 3.9Mbps",
+        "[🇬🇧] UK - Erith 5:47168 - 3.8Mbps",
+        "[🇳🇱] NL - Hollander 5:18569 - 3.5Mbps",
+        "[🇳🇱] NL - Maasdam 5:10799 - 3.3Mbps",
+        "[🇫🇷] FR - Camembert 5:45504 - 2.7Mbps",
+        "[🇳🇱] NL - Maasdam 8:23204 - 2.5Mbps",
+        "[🇫🇷] FR - Camembert 7:10799 - 2.4Mbps",
+        "[🇳🇱] NL - Maasdam 1:10799 - 2.1Mbps",
+        "[🇫🇷] FR - Camembert 7:24791 - 1.9Mbps",
+        "[🇫🇷] FR - Camembert 5:10799 - 1.8Mbps",
+        "[🇳🇱] NL - Maasdam 1:57791 - 1.8Mbps",
+        "[🇸🇬] SG - Octopus 5:18240 - 1.8Mbps",
+        "[🇫🇷] FR - Camembert 4:48141 - 1.7Mbps",
+        "[🇳🇱] NL - Maasdam 9:10799 - 1.5Mbps",
+        "[🇸🇬] SG - Octopus 1:58520 - 1.5Mbps",
+        "[🇸🇬] SG - Octopus 5:59044 - 1.5Mbps",
+        "[🇫🇷] FR - Camembert 5:40947 - 1.4Mbps",
+        "[🇸🇬] SG - Octopus 1:24267 - 1.2Mbps",
+        "[🇸🇬] SG - Octopus 4:16446 - 1.0Mbps",
+        "[🇸🇬] SG - Octopus 4:26017 - 0.9Mbps",
+        "[🇸🇬] SG - Octopus 4:20724 - 0.8Mbps",
+        "[🇳🇱] NL - Maasdam 8:10799 - 0.7Mbps",
+        "[🇸🇬] SG - Octopus 2:14131 - 0.6Mbps",
+        "[🇳🇱] NL - Maasdam 3:10799 - 0.5Mbps",
+        "[🇳🇱] NL - Maasdam 9:22029 - 0.5Mbps",
+        "[🇸🇬] SG - Octopus 3:19214 - 0.0Mbps"
+      ]
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    },
+    {
+      "type": "http",
+      "tag": "[🇺🇸] US - Mackerel 7:56639 - 41.8Mbps",
+      "server": "mackerel-7-us.maxxxcdn.com",
+      "server_port": 56639,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "mackerel-7-us.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇺🇸] US - Mackerel 7:18035 - 41.6Mbps",
+      "server": "mackerel-7-us.maxxxcdn.com",
+      "server_port": 18035,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "mackerel-7-us.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇺🇸] US - Mackerel 6:13843 - 40.2Mbps",
+      "server": "mackerel-6-us.maxxxcdn.com",
+      "server_port": 13843,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "mackerel-6-us.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇺🇸] US - Mackerel 7:52379 - 40.1Mbps",
+      "server": "mackerel-7-us.maxxxcdn.com",
+      "server_port": 52379,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "mackerel-7-us.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇺🇸] US - Trout East 3:10799 - 39.1Mbps",
+      "server": "trout-east-3-us.maxxxcdn.com",
+      "server_port": 10799,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "trout-east-3-us.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇺🇸] US - Mackerel 6:14063 - 38.8Mbps",
+      "server": "mackerel-6-us.maxxxcdn.com",
+      "server_port": 14063,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "mackerel-6-us.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇺🇸] US - Trout West 5:23993 - 37.9Mbps",
+      "server": "trout-west-5-us.maxxxcdn.com",
+      "server_port": 23993,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "trout-west-5-us.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇺🇸] US - Mackerel 6:51811 - 36.6Mbps",
+      "server": "mackerel-6-us.maxxxcdn.com",
+      "server_port": 51811,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "mackerel-6-us.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇺🇸] US - Trout West 3:36179 - 34.2Mbps",
+      "server": "trout-west-3-us.maxxxcdn.com",
+      "server_port": 36179,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "trout-west-3-us.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇺🇸] US - Trout West 4:21229 - 33.2Mbps",
+      "server": "trout-west-4-us.maxxxcdn.com",
+      "server_port": 21229,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "trout-west-4-us.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇬🇧] UK - Erith 6:12317 - 32.0Mbps",
+      "server": "erith-6-uk.maxxxcdn.com",
+      "server_port": 12317,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "erith-6-uk.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇺🇸] US - Trout East 5:31643 - 29.4Mbps",
+      "server": "trout-east-5-us.maxxxcdn.com",
+      "server_port": 31643,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "trout-east-5-us.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇺🇸] US - Trout East 4:52837 - 29.2Mbps",
+      "server": "trout-east-4-us.maxxxcdn.com",
+      "server_port": 52837,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "trout-east-4-us.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇺🇸] US - Trout East 4:10799 - 28.9Mbps",
+      "server": "trout-east-4-us.maxxxcdn.com",
+      "server_port": 10799,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "trout-east-4-us.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇬🇧] UK - Erith 6:10799 - 28.6Mbps",
+      "server": "erith-6-uk.maxxxcdn.com",
+      "server_port": 10799,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "erith-6-uk.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇬🇧] UK - Erith 4:55881 - 27.8Mbps",
+      "server": "erith-4-uk.maxxxcdn.com",
+      "server_port": 55881,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "erith-4-uk.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇺🇸] US - Trout East 5:10799 - 26.8Mbps",
+      "server": "trout-east-5-us.maxxxcdn.com",
+      "server_port": 10799,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "trout-east-5-us.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇺🇸] US - Trout East 6:36821 - 26.6Mbps",
+      "server": "trout-east-6-us.maxxxcdn.com",
+      "server_port": 36821,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "trout-east-6-us.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇬🇧] UK - Erith 4:13407 - 26.5Mbps",
+      "server": "erith-4-uk.maxxxcdn.com",
+      "server_port": 13407,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "erith-4-uk.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇬🇧] UK - Erith 4:20155 - 25.8Mbps",
+      "server": "erith-4-uk.maxxxcdn.com",
+      "server_port": 20155,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "erith-4-uk.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇺🇸] US - Trout East 7:64337 - 25.5Mbps",
+      "server": "trout-east-7-us.maxxxcdn.com",
+      "server_port": 64337,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "trout-east-7-us.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇫🇷] FR - Camembert 3:55541 - 21.2Mbps",
+      "server": "camembert-3-fr.maxxxcdn.com",
+      "server_port": 55541,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "camembert-3-fr.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇫🇷] FR - Parisian 3:21157 - 21.0Mbps",
+      "server": "parisian-3-fr.maxxxcdn.com",
+      "server_port": 21157,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "parisian-3-fr.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇫🇷] FR - Parisian 2:10799 - 20.8Mbps",
+      "server": "parisian-2-fr.maxxxcdn.com",
+      "server_port": 10799,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "parisian-2-fr.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇫🇷] FR - Parisian 3:47425 - 20.7Mbps",
+      "server": "parisian-3-fr.maxxxcdn.com",
+      "server_port": 47425,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "parisian-3-fr.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇫🇷] FR - Camembert 3:10799 - 20.6Mbps",
+      "server": "camembert-3-fr.maxxxcdn.com",
+      "server_port": 10799,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "camembert-3-fr.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇫🇷] FR - Parisian 3:10799 - 20.5Mbps",
+      "server": "parisian-3-fr.maxxxcdn.com",
+      "server_port": 10799,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "parisian-3-fr.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇫🇷] FR - Parisian 2:63239 - 20.4Mbps",
+      "server": "parisian-2-fr.maxxxcdn.com",
+      "server_port": 63239,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "parisian-2-fr.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇫🇷] FR - Parisian 2:31921 - 20.4Mbps",
+      "server": "parisian-2-fr.maxxxcdn.com",
+      "server_port": 31921,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "parisian-2-fr.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇬🇧] UK - Erith 2:49738 - 20.2Mbps",
+      "server": "erith-2-uk.maxxxcdn.com",
+      "server_port": 49738,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "erith-2-uk.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇬🇧] UK - Erith 4:10799 - 20.0Mbps",
+      "server": "erith-4-uk.maxxxcdn.com",
+      "server_port": 10799,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "erith-4-uk.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇬🇧] UK - Erith 3:25583 - 17.6Mbps",
+      "server": "erith-3-uk.maxxxcdn.com",
+      "server_port": 25583,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "erith-3-uk.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇫🇷] FR - Camembert 2:20590 - 17.4Mbps",
+      "server": "camembert-2-fr.maxxxcdn.com",
+      "server_port": 20590,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "camembert-2-fr.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇺🇸] US - Trout East 6:10799 - 17.1Mbps",
+      "server": "trout-east-6-us.maxxxcdn.com",
+      "server_port": 10799,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "trout-east-6-us.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇫🇷] FR - Parisian 1:26394 - 17.0Mbps",
+      "server": "parisian-1-fr.maxxxcdn.com",
+      "server_port": 26394,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "parisian-1-fr.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇫🇷] FR - Parisian 1:10799 - 16.2Mbps",
+      "server": "parisian-1-fr.maxxxcdn.com",
+      "server_port": 10799,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "parisian-1-fr.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇺🇸] US - Trout East 5:46845 - 15.2Mbps",
+      "server": "trout-east-5-us.maxxxcdn.com",
+      "server_port": 46845,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "trout-east-5-us.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇫🇷] FR - Camembert 2:10799 - 15.2Mbps",
+      "server": "camembert-2-fr.maxxxcdn.com",
+      "server_port": 10799,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "camembert-2-fr.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇫🇷] FR - Parisian 1:29390 - 14.9Mbps",
+      "server": "parisian-1-fr.maxxxcdn.com",
+      "server_port": 29390,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "parisian-1-fr.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇬🇧] UK - Erith 2:39161 - 14.8Mbps",
+      "server": "erith-2-uk.maxxxcdn.com",
+      "server_port": 39161,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "erith-2-uk.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇬🇧] UK - Erith 2:61017 - 14.1Mbps",
+      "server": "erith-2-uk.maxxxcdn.com",
+      "server_port": 61017,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "erith-2-uk.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇺🇸] US - Trout East 7:10799 - 13.9Mbps",
+      "server": "trout-east-7-us.maxxxcdn.com",
+      "server_port": 10799,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "trout-east-7-us.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇫🇷] FR - Camembert 2:26477 - 13.5Mbps",
+      "server": "camembert-2-fr.maxxxcdn.com",
+      "server_port": 26477,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "camembert-2-fr.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇬🇧] UK - Erith 3:49723 - 12.2Mbps",
+      "server": "erith-3-uk.maxxxcdn.com",
+      "server_port": 49723,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "erith-3-uk.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇬🇧] UK - Erith 5:10799 - 12.0Mbps",
+      "server": "erith-5-uk.maxxxcdn.com",
+      "server_port": 10799,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "erith-5-uk.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇫🇷] FR - Parisian 1:49303 - 12.0Mbps",
+      "server": "parisian-1-fr.maxxxcdn.com",
+      "server_port": 49303,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "parisian-1-fr.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇫🇷] FR - Camembert 3:37289 - 8.7Mbps",
+      "server": "camembert-3-fr.maxxxcdn.com",
+      "server_port": 37289,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "camembert-3-fr.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇬🇧] UK - Erith 2:10799 - 8.5Mbps",
+      "server": "erith-2-uk.maxxxcdn.com",
+      "server_port": 10799,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "erith-2-uk.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇬🇧] UK - Erith 3:10799 - 8.4Mbps",
+      "server": "erith-3-uk.maxxxcdn.com",
+      "server_port": 10799,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "erith-3-uk.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇳🇱] NL - Hollander 3:18351 - 8.3Mbps",
+      "server": "hollander-3-nl.maxxxcdn.com",
+      "server_port": 18351,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "hollander-3-nl.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇳🇱] NL - Maasdam 6:10799 - 8.2Mbps",
+      "server": "maasdam-6-nl.maxxxcdn.com",
+      "server_port": 10799,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "maasdam-6-nl.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇳🇱] NL - Hollander 3:59504 - 7.6Mbps",
+      "server": "hollander-3-nl.maxxxcdn.com",
+      "server_port": 59504,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "hollander-3-nl.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇳🇱] NL - Maasdam 5:25173 - 6.8Mbps",
+      "server": "maasdam-5-nl.maxxxcdn.com",
+      "server_port": 25173,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "maasdam-5-nl.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇳🇱] NL - Maasdam 4:10799 - 6.7Mbps",
+      "server": "maasdam-4-nl.maxxxcdn.com",
+      "server_port": 10799,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "maasdam-4-nl.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇳🇱] NL - Maasdam 4:62841 - 6.2Mbps",
+      "server": "maasdam-4-nl.maxxxcdn.com",
+      "server_port": 62841,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "maasdam-4-nl.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇳🇱] NL - Hollander 3:10799 - 6.2Mbps",
+      "server": "hollander-3-nl.maxxxcdn.com",
+      "server_port": 10799,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "hollander-3-nl.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇳🇱] NL - Hollander 8:10799 - 6.0Mbps",
+      "server": "hollander-8-nl.maxxxcdn.com",
+      "server_port": 10799,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "hollander-8-nl.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇳🇱] NL - Hollander 5:10799 - 5.8Mbps",
+      "server": "hollander-5-nl.maxxxcdn.com",
+      "server_port": 10799,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "hollander-5-nl.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇬🇧] UK - Erith 5:12610 - 5.7Mbps",
+      "server": "erith-5-uk.maxxxcdn.com",
+      "server_port": 12610,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "erith-5-uk.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇫🇷] FR - Parisian 2:39983 - 5.5Mbps",
+      "server": "parisian-2-fr.maxxxcdn.com",
+      "server_port": 39983,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "parisian-2-fr.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇫🇷] FR - Camembert 4:42873 - 5.5Mbps",
+      "server": "camembert-4-fr.maxxxcdn.com",
+      "server_port": 42873,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "camembert-4-fr.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇳🇱] NL - Maasdam 7:10799 - 5.4Mbps",
+      "server": "maasdam-7-nl.maxxxcdn.com",
+      "server_port": 10799,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "maasdam-7-nl.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇳🇱] NL - Maasdam 2:10799 - 5.3Mbps",
+      "server": "maasdam-2-nl.maxxxcdn.com",
+      "server_port": 10799,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "maasdam-2-nl.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇳🇱] NL - Hollander 6:61965 - 5.3Mbps",
+      "server": "hollander-6-nl.maxxxcdn.com",
+      "server_port": 61965,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "hollander-6-nl.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇫🇷] FR - Camembert 3:40547 - 5.1Mbps",
+      "server": "camembert-3-fr.maxxxcdn.com",
+      "server_port": 40547,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "camembert-3-fr.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇫🇷] FR - Camembert 6:10799 - 5.1Mbps",
+      "server": "camembert-6-fr.maxxxcdn.com",
+      "server_port": 10799,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "camembert-6-fr.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇳🇱] NL - Hollander 6:10799 - 5.1Mbps",
+      "server": "hollander-6-nl.maxxxcdn.com",
+      "server_port": 10799,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "hollander-6-nl.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇳🇱] NL - Hollander 7:10799 - 5.1Mbps",
+      "server": "hollander-7-nl.maxxxcdn.com",
+      "server_port": 10799,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "hollander-7-nl.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇳🇱] NL - Maasdam 7:50461 - 5.0Mbps",
+      "server": "maasdam-7-nl.maxxxcdn.com",
+      "server_port": 50461,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "maasdam-7-nl.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇫🇷] FR - Camembert 4:10799 - 4.7Mbps",
+      "server": "camembert-4-fr.maxxxcdn.com",
+      "server_port": 10799,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "camembert-4-fr.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇳🇱] NL - Maasdam 5:38099 - 4.5Mbps",
+      "server": "maasdam-5-nl.maxxxcdn.com",
+      "server_port": 38099,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "maasdam-5-nl.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇳🇱] NL - Maasdam 4:26589 - 4.4Mbps",
+      "server": "maasdam-4-nl.maxxxcdn.com",
+      "server_port": 26589,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "maasdam-4-nl.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇳🇱] NL - Hollander 8:48191 - 4.4Mbps",
+      "server": "hollander-8-nl.maxxxcdn.com",
+      "server_port": 48191,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "hollander-8-nl.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇫🇷] FR - Camembert 6:15094 - 4.2Mbps",
+      "server": "camembert-6-fr.maxxxcdn.com",
+      "server_port": 15094,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "camembert-6-fr.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇳🇱] NL - Maasdam 6:16723 - 4.1Mbps",
+      "server": "maasdam-6-nl.maxxxcdn.com",
+      "server_port": 16723,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "maasdam-6-nl.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇳🇱] NL - Hollander 7:43357 - 4.1Mbps",
+      "server": "hollander-7-nl.maxxxcdn.com",
+      "server_port": 43357,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "hollander-7-nl.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇫🇷] FR - Camembert 3:12635 - 3.9Mbps",
+      "server": "camembert-3-fr.maxxxcdn.com",
+      "server_port": 12635,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "camembert-3-fr.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇫🇷] FR - Camembert 5:22921 - 3.9Mbps",
+      "server": "camembert-5-fr.maxxxcdn.com",
+      "server_port": 22921,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "camembert-5-fr.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇬🇧] UK - Erith 5:47168 - 3.8Mbps",
+      "server": "erith-5-uk.maxxxcdn.com",
+      "server_port": 47168,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "erith-5-uk.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇳🇱] NL - Hollander 5:18569 - 3.5Mbps",
+      "server": "hollander-5-nl.maxxxcdn.com",
+      "server_port": 18569,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "hollander-5-nl.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇳🇱] NL - Maasdam 5:10799 - 3.3Mbps",
+      "server": "maasdam-5-nl.maxxxcdn.com",
+      "server_port": 10799,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "maasdam-5-nl.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇫🇷] FR - Camembert 5:45504 - 2.7Mbps",
+      "server": "camembert-5-fr.maxxxcdn.com",
+      "server_port": 45504,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "camembert-5-fr.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇳🇱] NL - Maasdam 8:23204 - 2.5Mbps",
+      "server": "maasdam-8-nl.maxxxcdn.com",
+      "server_port": 23204,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "maasdam-8-nl.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇫🇷] FR - Camembert 7:10799 - 2.4Mbps",
+      "server": "camembert-7-fr.maxxxcdn.com",
+      "server_port": 10799,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "camembert-7-fr.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇳🇱] NL - Maasdam 1:10799 - 2.1Mbps",
+      "server": "maasdam-1-nl.maxxxcdn.com",
+      "server_port": 10799,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "maasdam-1-nl.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇫🇷] FR - Camembert 7:24791 - 1.9Mbps",
+      "server": "camembert-7-fr.maxxxcdn.com",
+      "server_port": 24791,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "camembert-7-fr.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇫🇷] FR - Camembert 5:10799 - 1.8Mbps",
+      "server": "camembert-5-fr.maxxxcdn.com",
+      "server_port": 10799,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "camembert-5-fr.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇳🇱] NL - Maasdam 1:57791 - 1.8Mbps",
+      "server": "maasdam-1-nl.maxxxcdn.com",
+      "server_port": 57791,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "maasdam-1-nl.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇸🇬] SG - Octopus 5:18240 - 1.8Mbps",
+      "server": "octopus-5-sg.maxxxcdn.com",
+      "server_port": 18240,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "octopus-5-sg.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇫🇷] FR - Camembert 4:48141 - 1.7Mbps",
+      "server": "camembert-4-fr.maxxxcdn.com",
+      "server_port": 48141,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "camembert-4-fr.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇳🇱] NL - Maasdam 9:10799 - 1.5Mbps",
+      "server": "maasdam-9-nl.maxxxcdn.com",
+      "server_port": 10799,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "maasdam-9-nl.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇸🇬] SG - Octopus 1:58520 - 1.5Mbps",
+      "server": "octopus-1-sg.maxxxcdn.com",
+      "server_port": 58520,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "octopus-1-sg.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇸🇬] SG - Octopus 5:59044 - 1.5Mbps",
+      "server": "octopus-5-sg.maxxxcdn.com",
+      "server_port": 59044,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "octopus-5-sg.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇫🇷] FR - Camembert 5:40947 - 1.4Mbps",
+      "server": "camembert-5-fr.maxxxcdn.com",
+      "server_port": 40947,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "camembert-5-fr.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇸🇬] SG - Octopus 1:24267 - 1.2Mbps",
+      "server": "octopus-1-sg.maxxxcdn.com",
+      "server_port": 24267,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "octopus-1-sg.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇸🇬] SG - Octopus 4:16446 - 1.0Mbps",
+      "server": "octopus-4-sg.maxxxcdn.com",
+      "server_port": 16446,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "octopus-4-sg.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇸🇬] SG - Octopus 4:26017 - 0.9Mbps",
+      "server": "octopus-4-sg.maxxxcdn.com",
+      "server_port": 26017,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "octopus-4-sg.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇸🇬] SG - Octopus 4:20724 - 0.8Mbps",
+      "server": "octopus-4-sg.maxxxcdn.com",
+      "server_port": 20724,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "octopus-4-sg.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇳🇱] NL - Maasdam 8:10799 - 0.7Mbps",
+      "server": "maasdam-8-nl.maxxxcdn.com",
+      "server_port": 10799,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "maasdam-8-nl.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇸🇬] SG - Octopus 2:14131 - 0.6Mbps",
+      "server": "octopus-2-sg.maxxxcdn.com",
+      "server_port": 14131,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "octopus-2-sg.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇳🇱] NL - Maasdam 3:10799 - 0.5Mbps",
+      "server": "maasdam-3-nl.maxxxcdn.com",
+      "server_port": 10799,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "maasdam-3-nl.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇳🇱] NL - Maasdam 9:22029 - 0.5Mbps",
+      "server": "maasdam-9-nl.maxxxcdn.com",
+      "server_port": 22029,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "maasdam-9-nl.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "tag": "[🇸🇬] SG - Octopus 3:19214 - 0.0Mbps",
+      "server": "octopus-3-sg.maxxxcdn.com",
+      "server_port": 19214,
+      "username": "1efcc00c71121558bc71d33b9695487c",
+      "password": "v1TOxzh1zWK1tcq2",
+      "tls": {
+        "enabled": true,
+        "server_name": "octopus-3-sg.maxxxcdn.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "geosite": [
+          "ir"
+        ],
+        "outbound": "direct"
+      },
+      {
+        "geoip": [
+          "ir"
+        ],
+        "outbound": "direct"
+      }
+    ],
+    "auto_detect_interface": true
+  }
+}

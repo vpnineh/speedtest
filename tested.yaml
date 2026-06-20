@@ -4,724 +4,724 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: '[🇺🇸] US - Mackerel 6:13843 - 136.8Mbps'
-  type: http
-  server: mackerel-6-us.maxxxcdn.com
-  port: 13843
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇺🇸] US - Mackerel 6:14063 - 118.7Mbps'
-  type: http
-  server: mackerel-6-us.maxxxcdn.com
-  port: 14063
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇺🇸] US - Mackerel 6:51811 - 111.7Mbps'
-  type: http
-  server: mackerel-6-us.maxxxcdn.com
-  port: 51811
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇺🇸] US - Trout East 7:64337 - 74.1Mbps'
-  type: http
-  server: trout-east-7-us.maxxxcdn.com
-  port: 64337
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇺🇸] US - Trout East 4:52837 - 62.8Mbps'
-  type: http
-  server: trout-east-4-us.maxxxcdn.com
-  port: 52837
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇺🇸] US - Mackerel 7:18035 - 59.9Mbps'
-  type: http
-  server: mackerel-7-us.maxxxcdn.com
-  port: 18035
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇺🇸] US - Mackerel 7:52379 - 51.1Mbps'
-  type: http
-  server: mackerel-7-us.maxxxcdn.com
-  port: 52379
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇺🇸] US - Mackerel 7:56639 - 51.0Mbps'
+- name: '[🇺🇸] US - Mackerel 7:56639 - 41.8Mbps'
   type: http
   server: mackerel-7-us.maxxxcdn.com
   port: 56639
   username: 1efcc00c71121558bc71d33b9695487c
   password: v1TOxzh1zWK1tcq2
   tls: true
-- name: '[🇺🇸] US - Trout East 7:10799 - 49.9Mbps'
+- name: '[🇺🇸] US - Mackerel 7:18035 - 41.6Mbps'
   type: http
-  server: trout-east-7-us.maxxxcdn.com
-  port: 10799
+  server: mackerel-7-us.maxxxcdn.com
+  port: 18035
   username: 1efcc00c71121558bc71d33b9695487c
   password: v1TOxzh1zWK1tcq2
   tls: true
-- name: '[🇺🇸] US - Trout East 4:10799 - 46.9Mbps'
+- name: '[🇺🇸] US - Mackerel 6:13843 - 40.2Mbps'
   type: http
-  server: trout-east-4-us.maxxxcdn.com
-  port: 10799
+  server: mackerel-6-us.maxxxcdn.com
+  port: 13843
   username: 1efcc00c71121558bc71d33b9695487c
   password: v1TOxzh1zWK1tcq2
   tls: true
-- name: '[🇬🇧] UK - Erith 2:10799 - 33.7Mbps'
+- name: '[🇺🇸] US - Mackerel 7:52379 - 40.1Mbps'
   type: http
-  server: erith-2-uk.maxxxcdn.com
-  port: 10799
+  server: mackerel-7-us.maxxxcdn.com
+  port: 52379
   username: 1efcc00c71121558bc71d33b9695487c
   password: v1TOxzh1zWK1tcq2
   tls: true
-- name: '[🇫🇷] FR - Parisian 1:26394 - 25.1Mbps'
-  type: http
-  server: parisian-1-fr.maxxxcdn.com
-  port: 26394
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇺🇸] US - Trout East 3:10799 - 23.6Mbps'
+- name: '[🇺🇸] US - Trout East 3:10799 - 39.1Mbps'
   type: http
   server: trout-east-3-us.maxxxcdn.com
   port: 10799
   username: 1efcc00c71121558bc71d33b9695487c
   password: v1TOxzh1zWK1tcq2
   tls: true
-- name: '[🇫🇷] FR - Parisian 2:63239 - 23.4Mbps'
+- name: '[🇺🇸] US - Mackerel 6:14063 - 38.8Mbps'
   type: http
-  server: parisian-2-fr.maxxxcdn.com
-  port: 63239
+  server: mackerel-6-us.maxxxcdn.com
+  port: 14063
   username: 1efcc00c71121558bc71d33b9695487c
   password: v1TOxzh1zWK1tcq2
   tls: true
-- name: '[🇫🇷] FR - Parisian 2:39983 - 23.4Mbps'
-  type: http
-  server: parisian-2-fr.maxxxcdn.com
-  port: 39983
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇬🇧] UK - Erith 3:10799 - 22.7Mbps'
-  type: http
-  server: erith-3-uk.maxxxcdn.com
-  port: 10799
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇫🇷] FR - Parisian 2:31921 - 22.7Mbps'
-  type: http
-  server: parisian-2-fr.maxxxcdn.com
-  port: 31921
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇫🇷] FR - Parisian 1:10799 - 22.2Mbps'
-  type: http
-  server: parisian-1-fr.maxxxcdn.com
-  port: 10799
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇬🇧] UK - Erith 6:10799 - 21.8Mbps'
-  type: http
-  server: erith-6-uk.maxxxcdn.com
-  port: 10799
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇫🇷] FR - Parisian 1:49303 - 20.7Mbps'
-  type: http
-  server: parisian-1-fr.maxxxcdn.com
-  port: 49303
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇫🇷] FR - Camembert 3:55541 - 20.4Mbps'
-  type: http
-  server: camembert-3-fr.maxxxcdn.com
-  port: 55541
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇬🇧] UK - Erith 2:61017 - 18.1Mbps'
-  type: http
-  server: erith-2-uk.maxxxcdn.com
-  port: 61017
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇬🇧] UK - Erith 3:25583 - 17.8Mbps'
-  type: http
-  server: erith-3-uk.maxxxcdn.com
-  port: 25583
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇬🇧] UK - Erith 4:55881 - 16.0Mbps'
-  type: http
-  server: erith-4-uk.maxxxcdn.com
-  port: 55881
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇫🇷] FR - Camembert 3:37289 - 16.0Mbps'
-  type: http
-  server: camembert-3-fr.maxxxcdn.com
-  port: 37289
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇬🇧] UK - Erith 2:49738 - 15.4Mbps'
-  type: http
-  server: erith-2-uk.maxxxcdn.com
-  port: 49738
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇺🇸] US - Trout West 4:21229 - 15.3Mbps'
-  type: http
-  server: trout-west-4-us.maxxxcdn.com
-  port: 21229
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇫🇷] FR - Camembert 3:10799 - 15.2Mbps'
-  type: http
-  server: camembert-3-fr.maxxxcdn.com
-  port: 10799
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇫🇷] FR - Camembert 5:22921 - 15.2Mbps'
-  type: http
-  server: camembert-5-fr.maxxxcdn.com
-  port: 22921
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇫🇷] FR - Camembert 3:12635 - 15.0Mbps'
-  type: http
-  server: camembert-3-fr.maxxxcdn.com
-  port: 12635
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇳🇱] NL - Maasdam 6:16723 - 14.8Mbps'
-  type: http
-  server: maasdam-6-nl.maxxxcdn.com
-  port: 16723
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇫🇷] FR - Parisian 3:47425 - 14.0Mbps'
-  type: http
-  server: parisian-3-fr.maxxxcdn.com
-  port: 47425
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇫🇷] FR - Parisian 3:10799 - 13.7Mbps'
-  type: http
-  server: parisian-3-fr.maxxxcdn.com
-  port: 10799
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇫🇷] FR - Parisian 3:21157 - 13.7Mbps'
-  type: http
-  server: parisian-3-fr.maxxxcdn.com
-  port: 21157
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇬🇧] UK - Erith 3:49723 - 13.6Mbps'
-  type: http
-  server: erith-3-uk.maxxxcdn.com
-  port: 49723
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇳🇱] NL - Maasdam 6:10799 - 13.4Mbps'
-  type: http
-  server: maasdam-6-nl.maxxxcdn.com
-  port: 10799
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇺🇸] US - Trout East 5:46845 - 12.8Mbps'
-  type: http
-  server: trout-east-5-us.maxxxcdn.com
-  port: 46845
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇫🇷] FR - Camembert 2:26477 - 12.5Mbps'
-  type: http
-  server: camembert-2-fr.maxxxcdn.com
-  port: 26477
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇫🇷] FR - Camembert 2:20590 - 12.4Mbps'
-  type: http
-  server: camembert-2-fr.maxxxcdn.com
-  port: 20590
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇺🇸] US - Trout West 3:36179 - 12.3Mbps'
-  type: http
-  server: trout-west-3-us.maxxxcdn.com
-  port: 36179
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇳🇱] NL - Hollander 7:10799 - 12.3Mbps'
-  type: http
-  server: hollander-7-nl.maxxxcdn.com
-  port: 10799
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇺🇸] US - Trout East 5:31643 - 12.2Mbps'
-  type: http
-  server: trout-east-5-us.maxxxcdn.com
-  port: 31643
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇫🇷] FR - Camembert 3:40547 - 12.2Mbps'
-  type: http
-  server: camembert-3-fr.maxxxcdn.com
-  port: 40547
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇬🇧] UK - Erith 5:47168 - 10.9Mbps'
-  type: http
-  server: erith-5-uk.maxxxcdn.com
-  port: 47168
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇺🇸] US - Trout East 5:10799 - 10.7Mbps'
-  type: http
-  server: trout-east-5-us.maxxxcdn.com
-  port: 10799
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇺🇸] US - Trout East 6:10799 - 10.6Mbps'
-  type: http
-  server: trout-east-6-us.maxxxcdn.com
-  port: 10799
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇬🇧] UK - Erith 6:12317 - 10.6Mbps'
-  type: http
-  server: erith-6-uk.maxxxcdn.com
-  port: 12317
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇬🇧] UK - Erith 5:10799 - 10.4Mbps'
-  type: http
-  server: erith-5-uk.maxxxcdn.com
-  port: 10799
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇺🇸] US - Trout East 6:36821 - 9.7Mbps'
-  type: http
-  server: trout-east-6-us.maxxxcdn.com
-  port: 36821
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇫🇷] FR - Camembert 4:10799 - 9.2Mbps'
-  type: http
-  server: camembert-4-fr.maxxxcdn.com
-  port: 10799
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇫🇷] FR - Camembert 6:15094 - 8.3Mbps'
-  type: http
-  server: camembert-6-fr.maxxxcdn.com
-  port: 15094
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇫🇷] FR - Camembert 5:40947 - 8.0Mbps'
-  type: http
-  server: camembert-5-fr.maxxxcdn.com
-  port: 40947
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇬🇧] UK - Erith 4:10799 - 7.9Mbps'
-  type: http
-  server: erith-4-uk.maxxxcdn.com
-  port: 10799
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇫🇷] FR - Camembert 4:42873 - 7.9Mbps'
-  type: http
-  server: camembert-4-fr.maxxxcdn.com
-  port: 42873
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇳🇱] NL - Maasdam 5:10799 - 7.7Mbps'
-  type: http
-  server: maasdam-5-nl.maxxxcdn.com
-  port: 10799
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇫🇷] FR - Camembert 2:10799 - 7.6Mbps'
-  type: http
-  server: camembert-2-fr.maxxxcdn.com
-  port: 10799
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇳🇱] NL - Hollander 5:18569 - 7.5Mbps'
-  type: http
-  server: hollander-5-nl.maxxxcdn.com
-  port: 18569
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇳🇱] NL - Hollander 6:61965 - 7.2Mbps'
-  type: http
-  server: hollander-6-nl.maxxxcdn.com
-  port: 61965
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇬🇧] UK - Erith 2:39161 - 6.9Mbps'
-  type: http
-  server: erith-2-uk.maxxxcdn.com
-  port: 39161
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇫🇷] FR - Camembert 7:10799 - 6.9Mbps'
-  type: http
-  server: camembert-7-fr.maxxxcdn.com
-  port: 10799
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇳🇱] NL - Hollander 3:10799 - 6.7Mbps'
-  type: http
-  server: hollander-3-nl.maxxxcdn.com
-  port: 10799
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇫🇷] FR - Parisian 2:10799 - 6.5Mbps'
-  type: http
-  server: parisian-2-fr.maxxxcdn.com
-  port: 10799
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇬🇧] UK - Erith 4:20155 - 6.1Mbps'
-  type: http
-  server: erith-4-uk.maxxxcdn.com
-  port: 20155
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇺🇸] US - Trout West 5:23993 - 6.0Mbps'
+- name: '[🇺🇸] US - Trout West 5:23993 - 37.9Mbps'
   type: http
   server: trout-west-5-us.maxxxcdn.com
   port: 23993
   username: 1efcc00c71121558bc71d33b9695487c
   password: v1TOxzh1zWK1tcq2
   tls: true
-- name: '[🇳🇱] NL - Maasdam 4:26589 - 5.9Mbps'
+- name: '[🇺🇸] US - Mackerel 6:51811 - 36.6Mbps'
   type: http
-  server: maasdam-4-nl.maxxxcdn.com
-  port: 26589
+  server: mackerel-6-us.maxxxcdn.com
+  port: 51811
   username: 1efcc00c71121558bc71d33b9695487c
   password: v1TOxzh1zWK1tcq2
   tls: true
-- name: '[🇳🇱] NL - Hollander 3:18351 - 5.9Mbps'
+- name: '[🇺🇸] US - Trout West 3:36179 - 34.2Mbps'
   type: http
-  server: hollander-3-nl.maxxxcdn.com
-  port: 18351
+  server: trout-west-3-us.maxxxcdn.com
+  port: 36179
   username: 1efcc00c71121558bc71d33b9695487c
   password: v1TOxzh1zWK1tcq2
   tls: true
-- name: '[🇳🇱] NL - Hollander 8:10799 - 5.8Mbps'
+- name: '[🇺🇸] US - Trout West 4:21229 - 33.2Mbps'
   type: http
-  server: hollander-8-nl.maxxxcdn.com
+  server: trout-west-4-us.maxxxcdn.com
+  port: 21229
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇬🇧] UK - Erith 6:12317 - 32.0Mbps'
+  type: http
+  server: erith-6-uk.maxxxcdn.com
+  port: 12317
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇺🇸] US - Trout East 5:31643 - 29.4Mbps'
+  type: http
+  server: trout-east-5-us.maxxxcdn.com
+  port: 31643
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇺🇸] US - Trout East 4:52837 - 29.2Mbps'
+  type: http
+  server: trout-east-4-us.maxxxcdn.com
+  port: 52837
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇺🇸] US - Trout East 4:10799 - 28.9Mbps'
+  type: http
+  server: trout-east-4-us.maxxxcdn.com
   port: 10799
   username: 1efcc00c71121558bc71d33b9695487c
   password: v1TOxzh1zWK1tcq2
   tls: true
-- name: '[🇫🇷] FR - Parisian 1:29390 - 5.7Mbps'
+- name: '[🇬🇧] UK - Erith 6:10799 - 28.6Mbps'
   type: http
-  server: parisian-1-fr.maxxxcdn.com
-  port: 29390
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇳🇱] NL - Maasdam 4:62841 - 5.6Mbps'
-  type: http
-  server: maasdam-4-nl.maxxxcdn.com
-  port: 62841
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇳🇱] NL - Hollander 5:10799 - 5.6Mbps'
-  type: http
-  server: hollander-5-nl.maxxxcdn.com
+  server: erith-6-uk.maxxxcdn.com
   port: 10799
   username: 1efcc00c71121558bc71d33b9695487c
   password: v1TOxzh1zWK1tcq2
   tls: true
-- name: '[🇬🇧] UK - Erith 5:12610 - 5.5Mbps'
+- name: '[🇬🇧] UK - Erith 4:55881 - 27.8Mbps'
   type: http
-  server: erith-5-uk.maxxxcdn.com
-  port: 12610
+  server: erith-4-uk.maxxxcdn.com
+  port: 55881
   username: 1efcc00c71121558bc71d33b9695487c
   password: v1TOxzh1zWK1tcq2
   tls: true
-- name: '[🇫🇷] FR - Camembert 5:45504 - 5.4Mbps'
+- name: '[🇺🇸] US - Trout East 5:10799 - 26.8Mbps'
   type: http
-  server: camembert-5-fr.maxxxcdn.com
-  port: 45504
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇫🇷] FR - Camembert 5:10799 - 5.4Mbps'
-  type: http
-  server: camembert-5-fr.maxxxcdn.com
+  server: trout-east-5-us.maxxxcdn.com
   port: 10799
   username: 1efcc00c71121558bc71d33b9695487c
   password: v1TOxzh1zWK1tcq2
   tls: true
-- name: '[🇳🇱] NL - Maasdam 9:22029 - 5.4Mbps'
+- name: '[🇺🇸] US - Trout East 6:36821 - 26.6Mbps'
   type: http
-  server: maasdam-9-nl.maxxxcdn.com
-  port: 22029
+  server: trout-east-6-us.maxxxcdn.com
+  port: 36821
   username: 1efcc00c71121558bc71d33b9695487c
   password: v1TOxzh1zWK1tcq2
   tls: true
-- name: '[🇫🇷] FR - Camembert 4:48141 - 5.2Mbps'
-  type: http
-  server: camembert-4-fr.maxxxcdn.com
-  port: 48141
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇳🇱] NL - Hollander 3:59504 - 4.9Mbps'
-  type: http
-  server: hollander-3-nl.maxxxcdn.com
-  port: 59504
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇳🇱] NL - Maasdam 2:10799 - 4.8Mbps'
-  type: http
-  server: maasdam-2-nl.maxxxcdn.com
-  port: 10799
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇳🇱] NL - Maasdam 7:50461 - 4.7Mbps'
-  type: http
-  server: maasdam-7-nl.maxxxcdn.com
-  port: 50461
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇳🇱] NL - Maasdam 1:57791 - 4.5Mbps'
-  type: http
-  server: maasdam-1-nl.maxxxcdn.com
-  port: 57791
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇳🇱] NL - Maasdam 5:38099 - 4.4Mbps'
-  type: http
-  server: maasdam-5-nl.maxxxcdn.com
-  port: 38099
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇬🇧] UK - Erith 4:13407 - 4.3Mbps'
+- name: '[🇬🇧] UK - Erith 4:13407 - 26.5Mbps'
   type: http
   server: erith-4-uk.maxxxcdn.com
   port: 13407
   username: 1efcc00c71121558bc71d33b9695487c
   password: v1TOxzh1zWK1tcq2
   tls: true
-- name: '[🇳🇱] NL - Hollander 7:43357 - 3.9Mbps'
+- name: '[🇬🇧] UK - Erith 4:20155 - 25.8Mbps'
   type: http
-  server: hollander-7-nl.maxxxcdn.com
-  port: 43357
+  server: erith-4-uk.maxxxcdn.com
+  port: 20155
   username: 1efcc00c71121558bc71d33b9695487c
   password: v1TOxzh1zWK1tcq2
   tls: true
-- name: '[🇳🇱] NL - Maasdam 4:10799 - 3.8Mbps'
+- name: '[🇺🇸] US - Trout East 7:64337 - 25.5Mbps'
   type: http
-  server: maasdam-4-nl.maxxxcdn.com
+  server: trout-east-7-us.maxxxcdn.com
+  port: 64337
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇫🇷] FR - Camembert 3:55541 - 21.2Mbps'
+  type: http
+  server: camembert-3-fr.maxxxcdn.com
+  port: 55541
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇫🇷] FR - Parisian 3:21157 - 21.0Mbps'
+  type: http
+  server: parisian-3-fr.maxxxcdn.com
+  port: 21157
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇫🇷] FR - Parisian 2:10799 - 20.8Mbps'
+  type: http
+  server: parisian-2-fr.maxxxcdn.com
   port: 10799
   username: 1efcc00c71121558bc71d33b9695487c
   password: v1TOxzh1zWK1tcq2
   tls: true
-- name: '[🇳🇱] NL - Maasdam 5:25173 - 3.7Mbps'
+- name: '[🇫🇷] FR - Parisian 3:47425 - 20.7Mbps'
+  type: http
+  server: parisian-3-fr.maxxxcdn.com
+  port: 47425
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇫🇷] FR - Camembert 3:10799 - 20.6Mbps'
+  type: http
+  server: camembert-3-fr.maxxxcdn.com
+  port: 10799
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇫🇷] FR - Parisian 3:10799 - 20.5Mbps'
+  type: http
+  server: parisian-3-fr.maxxxcdn.com
+  port: 10799
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇫🇷] FR - Parisian 2:63239 - 20.4Mbps'
+  type: http
+  server: parisian-2-fr.maxxxcdn.com
+  port: 63239
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇫🇷] FR - Parisian 2:31921 - 20.4Mbps'
+  type: http
+  server: parisian-2-fr.maxxxcdn.com
+  port: 31921
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇬🇧] UK - Erith 2:49738 - 20.2Mbps'
+  type: http
+  server: erith-2-uk.maxxxcdn.com
+  port: 49738
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇬🇧] UK - Erith 4:10799 - 20.0Mbps'
+  type: http
+  server: erith-4-uk.maxxxcdn.com
+  port: 10799
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇬🇧] UK - Erith 3:25583 - 17.6Mbps'
+  type: http
+  server: erith-3-uk.maxxxcdn.com
+  port: 25583
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇫🇷] FR - Camembert 2:20590 - 17.4Mbps'
+  type: http
+  server: camembert-2-fr.maxxxcdn.com
+  port: 20590
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇺🇸] US - Trout East 6:10799 - 17.1Mbps'
+  type: http
+  server: trout-east-6-us.maxxxcdn.com
+  port: 10799
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇫🇷] FR - Parisian 1:26394 - 17.0Mbps'
+  type: http
+  server: parisian-1-fr.maxxxcdn.com
+  port: 26394
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇫🇷] FR - Parisian 1:10799 - 16.2Mbps'
+  type: http
+  server: parisian-1-fr.maxxxcdn.com
+  port: 10799
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇺🇸] US - Trout East 5:46845 - 15.2Mbps'
+  type: http
+  server: trout-east-5-us.maxxxcdn.com
+  port: 46845
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇫🇷] FR - Camembert 2:10799 - 15.2Mbps'
+  type: http
+  server: camembert-2-fr.maxxxcdn.com
+  port: 10799
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇫🇷] FR - Parisian 1:29390 - 14.9Mbps'
+  type: http
+  server: parisian-1-fr.maxxxcdn.com
+  port: 29390
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇬🇧] UK - Erith 2:39161 - 14.8Mbps'
+  type: http
+  server: erith-2-uk.maxxxcdn.com
+  port: 39161
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇬🇧] UK - Erith 2:61017 - 14.1Mbps'
+  type: http
+  server: erith-2-uk.maxxxcdn.com
+  port: 61017
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇺🇸] US - Trout East 7:10799 - 13.9Mbps'
+  type: http
+  server: trout-east-7-us.maxxxcdn.com
+  port: 10799
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇫🇷] FR - Camembert 2:26477 - 13.5Mbps'
+  type: http
+  server: camembert-2-fr.maxxxcdn.com
+  port: 26477
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇬🇧] UK - Erith 3:49723 - 12.2Mbps'
+  type: http
+  server: erith-3-uk.maxxxcdn.com
+  port: 49723
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇬🇧] UK - Erith 5:10799 - 12.0Mbps'
+  type: http
+  server: erith-5-uk.maxxxcdn.com
+  port: 10799
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇫🇷] FR - Parisian 1:49303 - 12.0Mbps'
+  type: http
+  server: parisian-1-fr.maxxxcdn.com
+  port: 49303
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇫🇷] FR - Camembert 3:37289 - 8.7Mbps'
+  type: http
+  server: camembert-3-fr.maxxxcdn.com
+  port: 37289
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇬🇧] UK - Erith 2:10799 - 8.5Mbps'
+  type: http
+  server: erith-2-uk.maxxxcdn.com
+  port: 10799
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇬🇧] UK - Erith 3:10799 - 8.4Mbps'
+  type: http
+  server: erith-3-uk.maxxxcdn.com
+  port: 10799
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇳🇱] NL - Hollander 3:18351 - 8.3Mbps'
+  type: http
+  server: hollander-3-nl.maxxxcdn.com
+  port: 18351
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇳🇱] NL - Maasdam 6:10799 - 8.2Mbps'
+  type: http
+  server: maasdam-6-nl.maxxxcdn.com
+  port: 10799
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇳🇱] NL - Hollander 3:59504 - 7.6Mbps'
+  type: http
+  server: hollander-3-nl.maxxxcdn.com
+  port: 59504
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇳🇱] NL - Maasdam 5:25173 - 6.8Mbps'
   type: http
   server: maasdam-5-nl.maxxxcdn.com
   port: 25173
   username: 1efcc00c71121558bc71d33b9695487c
   password: v1TOxzh1zWK1tcq2
   tls: true
-- name: '[🇳🇱] NL - Hollander 8:48191 - 3.6Mbps'
+- name: '[🇳🇱] NL - Maasdam 4:10799 - 6.7Mbps'
+  type: http
+  server: maasdam-4-nl.maxxxcdn.com
+  port: 10799
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇳🇱] NL - Maasdam 4:62841 - 6.2Mbps'
+  type: http
+  server: maasdam-4-nl.maxxxcdn.com
+  port: 62841
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇳🇱] NL - Hollander 3:10799 - 6.2Mbps'
+  type: http
+  server: hollander-3-nl.maxxxcdn.com
+  port: 10799
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇳🇱] NL - Hollander 8:10799 - 6.0Mbps'
   type: http
   server: hollander-8-nl.maxxxcdn.com
-  port: 48191
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇳🇱] NL - Hollander 6:10799 - 3.2Mbps'
-  type: http
-  server: hollander-6-nl.maxxxcdn.com
   port: 10799
   username: 1efcc00c71121558bc71d33b9695487c
   password: v1TOxzh1zWK1tcq2
   tls: true
-- name: '[🇫🇷] FR - Camembert 7:24791 - 2.7Mbps'
+- name: '[🇳🇱] NL - Hollander 5:10799 - 5.8Mbps'
   type: http
-  server: camembert-7-fr.maxxxcdn.com
-  port: 24791
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇳🇱] NL - Maasdam 9:10799 - 2.5Mbps'
-  type: http
-  server: maasdam-9-nl.maxxxcdn.com
+  server: hollander-5-nl.maxxxcdn.com
   port: 10799
   username: 1efcc00c71121558bc71d33b9695487c
   password: v1TOxzh1zWK1tcq2
   tls: true
-- name: '[🇳🇱] NL - Maasdam 7:10799 - 1.8Mbps'
+- name: '[🇬🇧] UK - Erith 5:12610 - 5.7Mbps'
+  type: http
+  server: erith-5-uk.maxxxcdn.com
+  port: 12610
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇫🇷] FR - Parisian 2:39983 - 5.5Mbps'
+  type: http
+  server: parisian-2-fr.maxxxcdn.com
+  port: 39983
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇫🇷] FR - Camembert 4:42873 - 5.5Mbps'
+  type: http
+  server: camembert-4-fr.maxxxcdn.com
+  port: 42873
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇳🇱] NL - Maasdam 7:10799 - 5.4Mbps'
   type: http
   server: maasdam-7-nl.maxxxcdn.com
   port: 10799
   username: 1efcc00c71121558bc71d33b9695487c
   password: v1TOxzh1zWK1tcq2
   tls: true
-- name: '[🇳🇱] NL - Maasdam 8:23204 - 1.8Mbps'
+- name: '[🇳🇱] NL - Maasdam 2:10799 - 5.3Mbps'
   type: http
-  server: maasdam-8-nl.maxxxcdn.com
-  port: 23204
+  server: maasdam-2-nl.maxxxcdn.com
+  port: 10799
   username: 1efcc00c71121558bc71d33b9695487c
   password: v1TOxzh1zWK1tcq2
   tls: true
-- name: '[🇫🇷] FR - Camembert 6:10799 - 1.7Mbps'
+- name: '[🇳🇱] NL - Hollander 6:61965 - 5.3Mbps'
+  type: http
+  server: hollander-6-nl.maxxxcdn.com
+  port: 61965
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇫🇷] FR - Camembert 3:40547 - 5.1Mbps'
+  type: http
+  server: camembert-3-fr.maxxxcdn.com
+  port: 40547
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇫🇷] FR - Camembert 6:10799 - 5.1Mbps'
   type: http
   server: camembert-6-fr.maxxxcdn.com
   port: 10799
   username: 1efcc00c71121558bc71d33b9695487c
   password: v1TOxzh1zWK1tcq2
   tls: true
-- name: '[🇸🇬] SG - Octopus 1:24267 - 1.7Mbps'
+- name: '[🇳🇱] NL - Hollander 6:10799 - 5.1Mbps'
   type: http
-  server: octopus-1-sg.maxxxcdn.com
-  port: 24267
+  server: hollander-6-nl.maxxxcdn.com
+  port: 10799
   username: 1efcc00c71121558bc71d33b9695487c
   password: v1TOxzh1zWK1tcq2
   tls: true
-- name: '[🇳🇱] NL - Maasdam 9:52418 - 1.3Mbps'
-  type: http-nl
-  server: maasdam-9-nl.maxxxcdn.com
-  port: 52418
-  username: 1efcc00c71121558bc71d33b9695487c
-  password: v1TOxzh1zWK1tcq2
-  tls: true
-- name: '[🇸🇬] SG - Octopus 1:58520 - 1.2Mbps'
+- name: '[🇳🇱] NL - Hollander 7:10799 - 5.1Mbps'
   type: http
-  server: octopus-1-sg.maxxxcdn.com
-  port: 58520
+  server: hollander-7-nl.maxxxcdn.com
+  port: 10799
   username: 1efcc00c71121558bc71d33b9695487c
   password: v1TOxzh1zWK1tcq2
   tls: true
-- name: '[🇸🇬] SG - Octopus 5:18240 - 1.1Mbps'
+- name: '[🇳🇱] NL - Maasdam 7:50461 - 5.0Mbps'
   type: http
-  server: octopus-5-sg.maxxxcdn.com
-  port: 18240
+  server: maasdam-7-nl.maxxxcdn.com
+  port: 50461
   username: 1efcc00c71121558bc71d33b9695487c
   password: v1TOxzh1zWK1tcq2
   tls: true
-- name: '[🇳🇱] NL - Maasdam 1:10799 - 1.0Mbps'
+- name: '[🇫🇷] FR - Camembert 4:10799 - 4.7Mbps'
+  type: http
+  server: camembert-4-fr.maxxxcdn.com
+  port: 10799
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇳🇱] NL - Maasdam 5:38099 - 4.5Mbps'
+  type: http
+  server: maasdam-5-nl.maxxxcdn.com
+  port: 38099
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇳🇱] NL - Maasdam 4:26589 - 4.4Mbps'
+  type: http
+  server: maasdam-4-nl.maxxxcdn.com
+  port: 26589
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇳🇱] NL - Hollander 8:48191 - 4.4Mbps'
+  type: http
+  server: hollander-8-nl.maxxxcdn.com
+  port: 48191
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇫🇷] FR - Camembert 6:15094 - 4.2Mbps'
+  type: http
+  server: camembert-6-fr.maxxxcdn.com
+  port: 15094
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇳🇱] NL - Maasdam 6:16723 - 4.1Mbps'
+  type: http
+  server: maasdam-6-nl.maxxxcdn.com
+  port: 16723
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇳🇱] NL - Hollander 7:43357 - 4.1Mbps'
+  type: http
+  server: hollander-7-nl.maxxxcdn.com
+  port: 43357
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇫🇷] FR - Camembert 3:12635 - 3.9Mbps'
+  type: http
+  server: camembert-3-fr.maxxxcdn.com
+  port: 12635
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇫🇷] FR - Camembert 5:22921 - 3.9Mbps'
+  type: http
+  server: camembert-5-fr.maxxxcdn.com
+  port: 22921
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇬🇧] UK - Erith 5:47168 - 3.8Mbps'
+  type: http
+  server: erith-5-uk.maxxxcdn.com
+  port: 47168
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇳🇱] NL - Hollander 5:18569 - 3.5Mbps'
+  type: http
+  server: hollander-5-nl.maxxxcdn.com
+  port: 18569
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇳🇱] NL - Maasdam 5:10799 - 3.3Mbps'
+  type: http
+  server: maasdam-5-nl.maxxxcdn.com
+  port: 10799
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇫🇷] FR - Camembert 5:45504 - 2.7Mbps'
+  type: http
+  server: camembert-5-fr.maxxxcdn.com
+  port: 45504
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇳🇱] NL - Maasdam 8:23204 - 2.5Mbps'
+  type: http
+  server: maasdam-8-nl.maxxxcdn.com
+  port: 23204
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇫🇷] FR - Camembert 7:10799 - 2.4Mbps'
+  type: http
+  server: camembert-7-fr.maxxxcdn.com
+  port: 10799
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇳🇱] NL - Maasdam 1:10799 - 2.1Mbps'
   type: http
   server: maasdam-1-nl.maxxxcdn.com
   port: 10799
   username: 1efcc00c71121558bc71d33b9695487c
   password: v1TOxzh1zWK1tcq2
   tls: true
-- name: '[🇳🇱] NL - Maasdam 8:10799 - 0.9Mbps'
+- name: '[🇫🇷] FR - Camembert 7:24791 - 1.9Mbps'
   type: http
-  server: maasdam-8-nl.maxxxcdn.com
+  server: camembert-7-fr.maxxxcdn.com
+  port: 24791
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇫🇷] FR - Camembert 5:10799 - 1.8Mbps'
+  type: http
+  server: camembert-5-fr.maxxxcdn.com
   port: 10799
   username: 1efcc00c71121558bc71d33b9695487c
   password: v1TOxzh1zWK1tcq2
   tls: true
-- name: '[🇸🇬] SG - Octopus 5:59044 - 0.9Mbps'
+- name: '[🇳🇱] NL - Maasdam 1:57791 - 1.8Mbps'
+  type: http
+  server: maasdam-1-nl.maxxxcdn.com
+  port: 57791
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇸🇬] SG - Octopus 5:18240 - 1.8Mbps'
+  type: http
+  server: octopus-5-sg.maxxxcdn.com
+  port: 18240
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇫🇷] FR - Camembert 4:48141 - 1.7Mbps'
+  type: http
+  server: camembert-4-fr.maxxxcdn.com
+  port: 48141
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇳🇱] NL - Maasdam 9:10799 - 1.5Mbps'
+  type: http
+  server: maasdam-9-nl.maxxxcdn.com
+  port: 10799
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇸🇬] SG - Octopus 1:58520 - 1.5Mbps'
+  type: http
+  server: octopus-1-sg.maxxxcdn.com
+  port: 58520
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇸🇬] SG - Octopus 5:59044 - 1.5Mbps'
   type: http
   server: octopus-5-sg.maxxxcdn.com
   port: 59044
   username: 1efcc00c71121558bc71d33b9695487c
   password: v1TOxzh1zWK1tcq2
   tls: true
-- name: '[🇸🇬] SG - Octopus 4:20724 - 0.7Mbps'
+- name: '[🇫🇷] FR - Camembert 5:40947 - 1.4Mbps'
   type: http
-  server: octopus-4-sg.maxxxcdn.com
-  port: 20724
+  server: camembert-5-fr.maxxxcdn.com
+  port: 40947
   username: 1efcc00c71121558bc71d33b9695487c
   password: v1TOxzh1zWK1tcq2
   tls: true
-- name: '[🇸🇬] SG - Octopus 4:16446 - 0.7Mbps'
+- name: '[🇸🇬] SG - Octopus 1:24267 - 1.2Mbps'
+  type: http
+  server: octopus-1-sg.maxxxcdn.com
+  port: 24267
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇸🇬] SG - Octopus 4:16446 - 1.0Mbps'
   type: http
   server: octopus-4-sg.maxxxcdn.com
   port: 16446
   username: 1efcc00c71121558bc71d33b9695487c
   password: v1TOxzh1zWK1tcq2
   tls: true
-- name: '[🇸🇬] SG - Octopus 4:26017 - 0.6Mbps'
+- name: '[🇸🇬] SG - Octopus 4:26017 - 0.9Mbps'
   type: http
   server: octopus-4-sg.maxxxcdn.com
   port: 26017
   username: 1efcc00c71121558bc71d33b9695487c
   password: v1TOxzh1zWK1tcq2
   tls: true
-- name: '[🇸🇬] SG - Octopus 2:14131 - 0.4Mbps'
+- name: '[🇸🇬] SG - Octopus 4:20724 - 0.8Mbps'
+  type: http
+  server: octopus-4-sg.maxxxcdn.com
+  port: 20724
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇳🇱] NL - Maasdam 8:10799 - 0.7Mbps'
+  type: http
+  server: maasdam-8-nl.maxxxcdn.com
+  port: 10799
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇳🇱] NL - Maasdam 9:52418 - 0.6Mbps'
+  type: http-nl
+  server: maasdam-9-nl.maxxxcdn.com
+  port: 52418
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇸🇬] SG - Octopus 2:14131 - 0.6Mbps'
   type: http
   server: octopus-2-sg.maxxxcdn.com
   port: 14131
   username: 1efcc00c71121558bc71d33b9695487c
   password: v1TOxzh1zWK1tcq2
   tls: true
-- name: '[🇳🇱] NL - Maasdam 3:10799 - 0.4Mbps'
+- name: '[🇳🇱] NL - Maasdam 3:10799 - 0.5Mbps'
   type: http
   server: maasdam-3-nl.maxxxcdn.com
   port: 10799
+  username: 1efcc00c71121558bc71d33b9695487c
+  password: v1TOxzh1zWK1tcq2
+  tls: true
+- name: '[🇳🇱] NL - Maasdam 9:22029 - 0.5Mbps'
+  type: http
+  server: maasdam-9-nl.maxxxcdn.com
+  port: 22029
   username: 1efcc00c71121558bc71d33b9695487c
   password: v1TOxzh1zWK1tcq2
   tls: true
@@ -760,130 +760,130 @@ proxy-groups:
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - '[🇺🇸] US - Trout East 7:10799 - 49.9Mbps'
-  - '[🇺🇸] US - Trout East 4:10799 - 46.9Mbps'
-  - '[🇺🇸] US - Trout East 3:10799 - 23.6Mbps'
-  - '[🇺🇸] US - Trout East 5:10799 - 10.7Mbps'
-  - '[🇺🇸] US - Trout East 6:10799 - 10.6Mbps'
-  - '[🇺🇸] US - Trout East 4:52837 - 62.8Mbps'
-  - '[🇺🇸] US - Trout East 5:46845 - 12.8Mbps'
-  - '[🇺🇸] US - Trout East 5:31643 - 12.2Mbps'
-  - '[🇺🇸] US - Trout East 6:36821 - 9.7Mbps'
-  - '[🇺🇸] US - Trout East 7:64337 - 74.1Mbps'
-  - '[🇺🇸] US - Mackerel 6:51811 - 111.7Mbps'
-  - '[🇺🇸] US - Mackerel 6:14063 - 118.7Mbps'
-  - '[🇺🇸] US - Mackerel 6:13843 - 136.8Mbps'
-  - '[🇺🇸] US - Mackerel 7:52379 - 51.1Mbps'
-  - '[🇺🇸] US - Mackerel 7:56639 - 51.0Mbps'
-  - '[🇺🇸] US - Mackerel 7:18035 - 59.9Mbps'
-  - '[🇺🇸] US - Trout West 3:36179 - 12.3Mbps'
-  - '[🇺🇸] US - Trout West 4:21229 - 15.3Mbps'
-  - '[🇺🇸] US - Trout West 5:23993 - 6.0Mbps'
+  - '[🇺🇸] US - Trout East 3:10799 - 39.1Mbps'
+  - '[🇺🇸] US - Trout East 4:10799 - 28.9Mbps'
+  - '[🇺🇸] US - Trout East 5:10799 - 26.8Mbps'
+  - '[🇺🇸] US - Trout East 6:10799 - 17.1Mbps'
+  - '[🇺🇸] US - Trout East 7:10799 - 13.9Mbps'
+  - '[🇺🇸] US - Trout East 4:52837 - 29.2Mbps'
+  - '[🇺🇸] US - Trout East 5:46845 - 15.2Mbps'
+  - '[🇺🇸] US - Trout East 5:31643 - 29.4Mbps'
+  - '[🇺🇸] US - Trout East 6:36821 - 26.6Mbps'
+  - '[🇺🇸] US - Trout East 7:64337 - 25.5Mbps'
+  - '[🇺🇸] US - Mackerel 6:51811 - 36.6Mbps'
+  - '[🇺🇸] US - Mackerel 6:14063 - 38.8Mbps'
+  - '[🇺🇸] US - Mackerel 6:13843 - 40.2Mbps'
+  - '[🇺🇸] US - Mackerel 7:52379 - 40.1Mbps'
+  - '[🇺🇸] US - Mackerel 7:56639 - 41.8Mbps'
+  - '[🇺🇸] US - Mackerel 7:18035 - 41.6Mbps'
+  - '[🇺🇸] US - Trout West 3:36179 - 34.2Mbps'
+  - '[🇺🇸] US - Trout West 4:21229 - 33.2Mbps'
+  - '[🇺🇸] US - Trout West 5:23993 - 37.9Mbps'
 - name: 🇬🇧 Auto-UK
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - '[🇬🇧] UK - Erith 2:61017 - 18.1Mbps'
-  - '[🇬🇧] UK - Erith 2:39161 - 6.9Mbps'
-  - '[🇬🇧] UK - Erith 2:49738 - 15.4Mbps'
-  - '[🇬🇧] UK - Erith 3:49723 - 13.6Mbps'
-  - '[🇬🇧] UK - Erith 3:25583 - 17.8Mbps'
-  - '[🇬🇧] UK - Erith 4:20155 - 6.1Mbps'
-  - '[🇬🇧] UK - Erith 4:13407 - 4.3Mbps'
-  - '[🇬🇧] UK - Erith 4:55881 - 16.0Mbps'
-  - '[🇬🇧] UK - Erith 2:10799 - 33.7Mbps'
-  - '[🇬🇧] UK - Erith 3:10799 - 22.7Mbps'
-  - '[🇬🇧] UK - Erith 6:10799 - 21.8Mbps'
-  - '[🇬🇧] UK - Erith 5:10799 - 10.4Mbps'
-  - '[🇬🇧] UK - Erith 4:10799 - 7.9Mbps'
-  - '[🇬🇧] UK - Erith 5:47168 - 10.9Mbps'
-  - '[🇬🇧] UK - Erith 5:12610 - 5.5Mbps'
-  - '[🇬🇧] UK - Erith 6:12317 - 10.6Mbps'
+  - '[🇬🇧] UK - Erith 2:61017 - 14.1Mbps'
+  - '[🇬🇧] UK - Erith 2:39161 - 14.8Mbps'
+  - '[🇬🇧] UK - Erith 2:49738 - 20.2Mbps'
+  - '[🇬🇧] UK - Erith 3:49723 - 12.2Mbps'
+  - '[🇬🇧] UK - Erith 3:25583 - 17.6Mbps'
+  - '[🇬🇧] UK - Erith 4:20155 - 25.8Mbps'
+  - '[🇬🇧] UK - Erith 4:13407 - 26.5Mbps'
+  - '[🇬🇧] UK - Erith 4:55881 - 27.8Mbps'
+  - '[🇬🇧] UK - Erith 6:10799 - 28.6Mbps'
+  - '[🇬🇧] UK - Erith 4:10799 - 20.0Mbps'
+  - '[🇬🇧] UK - Erith 5:10799 - 12.0Mbps'
+  - '[🇬🇧] UK - Erith 2:10799 - 8.5Mbps'
+  - '[🇬🇧] UK - Erith 3:10799 - 8.4Mbps'
+  - '[🇬🇧] UK - Erith 5:47168 - 3.8Mbps'
+  - '[🇬🇧] UK - Erith 5:12610 - 5.7Mbps'
+  - '[🇬🇧] UK - Erith 6:12317 - 32.0Mbps'
 - name: 🇫🇷 Auto-FR
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - '[🇫🇷] FR - Parisian 1:26394 - 25.1Mbps'
-  - '[🇫🇷] FR - Parisian 1:29390 - 5.7Mbps'
-  - '[🇫🇷] FR - Parisian 1:49303 - 20.7Mbps'
-  - '[🇫🇷] FR - Parisian 2:63239 - 23.4Mbps'
-  - '[🇫🇷] FR - Parisian 2:31921 - 22.7Mbps'
-  - '[🇫🇷] FR - Parisian 2:39983 - 23.4Mbps'
-  - '[🇫🇷] FR - Parisian 1:10799 - 22.2Mbps'
-  - '[🇫🇷] FR - Parisian 3:10799 - 13.7Mbps'
-  - '[🇫🇷] FR - Parisian 2:10799 - 6.5Mbps'
-  - '[🇫🇷] FR - Parisian 3:47425 - 14.0Mbps'
-  - '[🇫🇷] FR - Parisian 3:21157 - 13.7Mbps'
-  - '[🇫🇷] FR - Camembert 2:26477 - 12.5Mbps'
-  - '[🇫🇷] FR - Camembert 2:20590 - 12.4Mbps'
-  - '[🇫🇷] FR - Camembert 3:55541 - 20.4Mbps'
-  - '[🇫🇷] FR - Camembert 3:37289 - 16.0Mbps'
-  - '[🇫🇷] FR - Camembert 3:40547 - 12.2Mbps'
-  - '[🇫🇷] FR - Camembert 3:12635 - 15.0Mbps'
-  - '[🇫🇷] FR - Camembert 4:42873 - 7.9Mbps'
-  - '[🇫🇷] FR - Camembert 4:48141 - 5.2Mbps'
-  - '[🇫🇷] FR - Camembert 5:40947 - 8.0Mbps'
-  - '[🇫🇷] FR - Camembert 5:45504 - 5.4Mbps'
-  - '[🇫🇷] FR - Camembert 3:10799 - 15.2Mbps'
-  - '[🇫🇷] FR - Camembert 4:10799 - 9.2Mbps'
-  - '[🇫🇷] FR - Camembert 2:10799 - 7.6Mbps'
-  - '[🇫🇷] FR - Camembert 7:10799 - 6.9Mbps'
-  - '[🇫🇷] FR - Camembert 5:10799 - 5.4Mbps'
-  - '[🇫🇷] FR - Camembert 6:10799 - 1.7Mbps'
-  - '[🇫🇷] FR - Camembert 5:22921 - 15.2Mbps'
-  - '[🇫🇷] FR - Camembert 6:15094 - 8.3Mbps'
-  - '[🇫🇷] FR - Camembert 7:24791 - 2.7Mbps'
+  - '[🇫🇷] FR - Parisian 1:26394 - 17.0Mbps'
+  - '[🇫🇷] FR - Parisian 1:29390 - 14.9Mbps'
+  - '[🇫🇷] FR - Parisian 1:49303 - 12.0Mbps'
+  - '[🇫🇷] FR - Parisian 2:63239 - 20.4Mbps'
+  - '[🇫🇷] FR - Parisian 2:31921 - 20.4Mbps'
+  - '[🇫🇷] FR - Parisian 2:39983 - 5.5Mbps'
+  - '[🇫🇷] FR - Parisian 2:10799 - 20.8Mbps'
+  - '[🇫🇷] FR - Parisian 3:10799 - 20.5Mbps'
+  - '[🇫🇷] FR - Parisian 1:10799 - 16.2Mbps'
+  - '[🇫🇷] FR - Parisian 3:47425 - 20.7Mbps'
+  - '[🇫🇷] FR - Parisian 3:21157 - 21.0Mbps'
+  - '[🇫🇷] FR - Camembert 2:26477 - 13.5Mbps'
+  - '[🇫🇷] FR - Camembert 2:20590 - 17.4Mbps'
+  - '[🇫🇷] FR - Camembert 3:55541 - 21.2Mbps'
+  - '[🇫🇷] FR - Camembert 3:37289 - 8.7Mbps'
+  - '[🇫🇷] FR - Camembert 3:40547 - 5.1Mbps'
+  - '[🇫🇷] FR - Camembert 3:12635 - 3.9Mbps'
+  - '[🇫🇷] FR - Camembert 4:42873 - 5.5Mbps'
+  - '[🇫🇷] FR - Camembert 4:48141 - 1.7Mbps'
+  - '[🇫🇷] FR - Camembert 5:40947 - 1.4Mbps'
+  - '[🇫🇷] FR - Camembert 5:45504 - 2.7Mbps'
+  - '[🇫🇷] FR - Camembert 3:10799 - 20.6Mbps'
+  - '[🇫🇷] FR - Camembert 2:10799 - 15.2Mbps'
+  - '[🇫🇷] FR - Camembert 6:10799 - 5.1Mbps'
+  - '[🇫🇷] FR - Camembert 4:10799 - 4.7Mbps'
+  - '[🇫🇷] FR - Camembert 7:10799 - 2.4Mbps'
+  - '[🇫🇷] FR - Camembert 5:10799 - 1.8Mbps'
+  - '[🇫🇷] FR - Camembert 5:22921 - 3.9Mbps'
+  - '[🇫🇷] FR - Camembert 6:15094 - 4.2Mbps'
+  - '[🇫🇷] FR - Camembert 7:24791 - 1.9Mbps'
 - name: 🇳🇱 Auto-NL
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - '[🇳🇱] NL - Maasdam 1:57791 - 4.5Mbps'
-  - '[🇳🇱] NL - Maasdam 4:26589 - 5.9Mbps'
-  - '[🇳🇱] NL - Maasdam 6:10799 - 13.4Mbps'
-  - '[🇳🇱] NL - Maasdam 5:10799 - 7.7Mbps'
-  - '[🇳🇱] NL - Maasdam 2:10799 - 4.8Mbps'
-  - '[🇳🇱] NL - Maasdam 4:10799 - 3.8Mbps'
-  - '[🇳🇱] NL - Maasdam 9:10799 - 2.5Mbps'
-  - '[🇳🇱] NL - Maasdam 7:10799 - 1.8Mbps'
-  - '[🇳🇱] NL - Maasdam 1:10799 - 1.0Mbps'
-  - '[🇳🇱] NL - Maasdam 8:10799 - 0.9Mbps'
-  - '[🇳🇱] NL - Maasdam 3:10799 - 0.4Mbps'
-  - '[🇳🇱] NL - Maasdam 4:62841 - 5.6Mbps'
-  - '[🇳🇱] NL - Maasdam 5:38099 - 4.4Mbps'
-  - '[🇳🇱] NL - Maasdam 5:25173 - 3.7Mbps'
-  - '[🇳🇱] NL - Maasdam 6:16723 - 14.8Mbps'
-  - '[🇳🇱] NL - Maasdam 7:50461 - 4.7Mbps'
-  - '[🇳🇱] NL - Maasdam 8:23204 - 1.8Mbps'
-  - '[🇳🇱] NL - Maasdam 9:22029 - 5.4Mbps'
-  - '[🇳🇱] NL - Maasdam 9:52418 - 1.3Mbps'
-  - '[🇳🇱] NL - Hollander 3:59504 - 4.9Mbps'
-  - '[🇳🇱] NL - Hollander 3:18351 - 5.9Mbps'
-  - '[🇳🇱] NL - Hollander 5:18569 - 7.5Mbps'
-  - '[🇳🇱] NL - Hollander 6:61965 - 7.2Mbps'
-  - '[🇳🇱] NL - Hollander 7:10799 - 12.3Mbps'
-  - '[🇳🇱] NL - Hollander 3:10799 - 6.7Mbps'
-  - '[🇳🇱] NL - Hollander 8:10799 - 5.8Mbps'
-  - '[🇳🇱] NL - Hollander 5:10799 - 5.6Mbps'
-  - '[🇳🇱] NL - Hollander 6:10799 - 3.2Mbps'
-  - '[🇳🇱] NL - Hollander 7:43357 - 3.9Mbps'
-  - '[🇳🇱] NL - Hollander 8:48191 - 3.6Mbps'
+  - '[🇳🇱] NL - Maasdam 1:57791 - 1.8Mbps'
+  - '[🇳🇱] NL - Maasdam 4:26589 - 4.4Mbps'
+  - '[🇳🇱] NL - Maasdam 6:10799 - 8.2Mbps'
+  - '[🇳🇱] NL - Maasdam 4:10799 - 6.7Mbps'
+  - '[🇳🇱] NL - Maasdam 7:10799 - 5.4Mbps'
+  - '[🇳🇱] NL - Maasdam 2:10799 - 5.3Mbps'
+  - '[🇳🇱] NL - Maasdam 5:10799 - 3.3Mbps'
+  - '[🇳🇱] NL - Maasdam 1:10799 - 2.1Mbps'
+  - '[🇳🇱] NL - Maasdam 9:10799 - 1.5Mbps'
+  - '[🇳🇱] NL - Maasdam 8:10799 - 0.7Mbps'
+  - '[🇳🇱] NL - Maasdam 3:10799 - 0.5Mbps'
+  - '[🇳🇱] NL - Maasdam 4:62841 - 6.2Mbps'
+  - '[🇳🇱] NL - Maasdam 5:38099 - 4.5Mbps'
+  - '[🇳🇱] NL - Maasdam 5:25173 - 6.8Mbps'
+  - '[🇳🇱] NL - Maasdam 6:16723 - 4.1Mbps'
+  - '[🇳🇱] NL - Maasdam 7:50461 - 5.0Mbps'
+  - '[🇳🇱] NL - Maasdam 8:23204 - 2.5Mbps'
+  - '[🇳🇱] NL - Maasdam 9:22029 - 0.5Mbps'
+  - '[🇳🇱] NL - Maasdam 9:52418 - 0.6Mbps'
+  - '[🇳🇱] NL - Hollander 3:59504 - 7.6Mbps'
+  - '[🇳🇱] NL - Hollander 3:18351 - 8.3Mbps'
+  - '[🇳🇱] NL - Hollander 5:18569 - 3.5Mbps'
+  - '[🇳🇱] NL - Hollander 6:61965 - 5.3Mbps'
+  - '[🇳🇱] NL - Hollander 3:10799 - 6.2Mbps'
+  - '[🇳🇱] NL - Hollander 8:10799 - 6.0Mbps'
+  - '[🇳🇱] NL - Hollander 5:10799 - 5.8Mbps'
+  - '[🇳🇱] NL - Hollander 6:10799 - 5.1Mbps'
+  - '[🇳🇱] NL - Hollander 7:10799 - 5.1Mbps'
+  - '[🇳🇱] NL - Hollander 7:43357 - 4.1Mbps'
+  - '[🇳🇱] NL - Hollander 8:48191 - 4.4Mbps'
 - name: 🇸🇬 Auto-SG
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - '[🇸🇬] SG - Octopus 1:24267 - 1.7Mbps'
-  - '[🇸🇬] SG - Octopus 1:58520 - 1.2Mbps'
-  - '[🇸🇬] SG - Octopus 2:14131 - 0.4Mbps'
+  - '[🇸🇬] SG - Octopus 1:24267 - 1.2Mbps'
+  - '[🇸🇬] SG - Octopus 1:58520 - 1.5Mbps'
+  - '[🇸🇬] SG - Octopus 2:14131 - 0.6Mbps'
   - '[🇸🇬] SG - Octopus 3:19214 - 0.0Mbps'
-  - '[🇸🇬] SG - Octopus 4:26017 - 0.6Mbps'
-  - '[🇸🇬] SG - Octopus 4:20724 - 0.7Mbps'
-  - '[🇸🇬] SG - Octopus 4:16446 - 0.7Mbps'
-  - '[🇸🇬] SG - Octopus 5:18240 - 1.1Mbps'
-  - '[🇸🇬] SG - Octopus 5:59044 - 0.9Mbps'
+  - '[🇸🇬] SG - Octopus 4:26017 - 0.9Mbps'
+  - '[🇸🇬] SG - Octopus 4:20724 - 0.8Mbps'
+  - '[🇸🇬] SG - Octopus 4:16446 - 1.0Mbps'
+  - '[🇸🇬] SG - Octopus 5:18240 - 1.8Mbps'
+  - '[🇸🇬] SG - Octopus 5:59044 - 1.5Mbps'
 - name: 🇷🇺 Auto-RU
   type: url-test
   url: http://www.gstatic.com/generate_204
