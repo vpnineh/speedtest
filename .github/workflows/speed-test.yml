@@ -1,4 +1,4 @@
-name: Standard Proxy Scanner (tested & all)
+name: Ultimate Scanner (Clash + Singbox)
 
 on:
   workflow_dispatch:
@@ -32,8 +32,8 @@ jobs:
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         
-        # این خط حیاتی است و به گیت می‌گوید هر دو فایل را روی ریپازیتوری شما ذخیره کند
-        git add tested.yaml all.yaml
+        # اضافه شدن فایل سینگ‌باکس به لیست فایل‌های گیت
+        git add tested.yaml all.yaml tested-singbox.json
         
-        git commit -m "update: standard scan completed [tested.yaml & all.yaml]" || echo "No changes"
+        git commit -m "update: standard scan completed [clash + singbox]" || echo "No changes"
         git push
