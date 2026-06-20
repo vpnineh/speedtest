@@ -4,9 +4,10 @@ import time
 import re
 import urllib3
 import concurrent.futures
+import copy
 from collections import defaultdict
 
-# خاموش کردن کامل هشدارهای SSL
+# خاموش کردن هشدارهای SSL برای دامنه‌های تولید شده
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 FLAGS = {
@@ -14,13 +15,8 @@ FLAGS = {
     "NL": "🇳🇱", "SG": "🇸🇬", "RU": "🇷🇺", "DE": "🇩🇪"
 }
 
-# ۳ سورس قدرتمند و معتبر برای تست پهنای باند با فایل‌های حجیم
-TEST_URLS = [
-    "http://cachefly.cachefly.net/10mb.test",
-    "http://speed.cloudflare.com/__down?bytes=15000000",
-    "http://ipv4.download.thinkbroadband.com/10MB.zip"
-]
-
+# قفل شده روی معتبرترین سورس برای ربات‌ها
+TEST_URL = "http://cachefly.cachefly.net/10mb.test"
 TIMEOUT = 12
 
 HEADERS = {
@@ -39,48 +35,60 @@ def test_candidate(cand):
         proxy_url = f"{scheme}://{server}:{port}"
 
     proxies = {"http": proxy_url, "https": proxy_url}
-    last_error = ""
 
-    # لوپ تست ۳ مرحله‌ای
-    for url in TEST_URLS:
-        try:
-            start = time.time()
-            resp = requests.get(url, proxies=proxies, timeout=TIMEOUT, headers=HEADERS, verify=False)
-            resp.raise_for_status()
-            duration = time.time() - start
-            
-            # اگر با موفقیت دانلود شد، سرعت محاسبه شده و تابع پایان می‌یابد
-            mbps = (len(resp.content) * 8) / duration / 1_000_000
-            cand['speed'] = round(mbps, 1)
-            return cand
-            
-        except Exception as e:
-            error_msg = str(e)
-            if "Read timed out" in error_msg:
-                last_error = "Timeout"
-            elif "Max retries exceeded" in error_msg or "Connection refused" in error_msg:
-                last_error = "Connection Failed / Dead Node"
-            elif "403 Client Error" in error_msg:
-                last_error = "Blocked (403)"
-            else:
-                last_error = error_msg[:30] + "..."
-            # در صورت خطا با این لینک، حلقه ادامه پیدا می‌کند و سورس بعدی تست می‌شود
+    try:
+        start = time.time()
+        resp = requests.get(TEST_URL, proxies=proxies, timeout=TIMEOUT, headers=HEADERS, verify=False)
+        resp.raise_for_status()
+        duration = time.time() - start
+        
+        mbps = (len(resp.content) * 8) / duration / 1_000_000
+        cand['speed'] = round(mbps, 1)
+        cand['status'] = 'LIVE'
+        return cand
+        
+    except Exception as e:
+        cand['speed'] = 0.0
+        cand['status'] = 'DEAD'
+        error_msg = str(e)
+        if "Read timed out" in error_msg:
+            cand['error'] = "Timeout"
+        elif "Max retries exceeded" in error_msg or "Connection refused" in error_msg:
+            cand['error'] = "Conn Failed"
+        elif "403 Client Error" in error_msg:
+            cand['error'] = "Blocked 403"
+        else:
+            cand['error'] = "Error"
+        return cand
 
-    # اگر تمام سورس‌ها در حلقه بالا شکست خوردند، پراکسی واقعاً آفلاین است
-    cand['speed'] = 0.0
-    cand['error'] = last_error
-    return cand
+def rebuild_clash_groups(clash_dict, name_mapping, original_names):
+    """بازسازی گروه‌های کلش بر اساس نام‌های جدید"""
+    if 'proxy-groups' in clash_dict:
+        for group in clash_dict['proxy-groups']:
+            if 'proxies' not in group: continue
+            new_group_proxies = []
+            for p_name in group['proxies']:
+                if p_name in original_names:
+                    # جایگزینی با نام‌های جدید تولید شده
+                    new_group_proxies.extend(name_mapping.get(p_name, []))
+                else:
+                    new_group_proxies.append(p_name)
+            
+            # حذف موارد تکراری ضمن حفظ ترتیب سرعت
+            seen = set()
+            group['proxies'] = [x for x in new_group_proxies if not (x in seen or seen.add(x))]
+    return clash_dict
 
 def main():
     print("Loading vpnlist.yaml...")
     try:
         with open('vpnlist.yaml', 'r', encoding='utf-8') as f:
-            clash_data = yaml.safe_load(f)
+            base_clash_data = yaml.safe_load(f)
     except Exception as e:
         print(f"Error loading yaml: {e}")
         return
 
-    original_proxies = clash_data.get('proxies', [])
+    original_proxies = base_clash_data.get('proxies', [])
     original_proxy_names = {p['name'] for p in original_proxies}
     candidate_list = []
     seen_server_ports = set()
@@ -96,16 +104,14 @@ def main():
         if match:
             dc_base = match.group(1)
             country = match.group(2).upper()
-            
             for i in range(1, 11):
                 new_server = f"{dc_base}-{i}-{country.lower()}.maxxxcdn.com"
                 combo = f"{new_server}:{port}"
                 
-                if combo in seen_server_ports:
-                    continue
+                if combo in seen_server_ports: continue
                 seen_server_ports.add(combo)
                 
-                new_proxy = old_proxy.copy()
+                new_proxy = copy.deepcopy(old_proxy)
                 new_proxy['server'] = new_server
                 
                 candidate_list.append({
@@ -121,7 +127,7 @@ def main():
             if combo not in seen_server_ports:
                 seen_server_ports.add(combo)
                 candidate_list.append({
-                    'proxy': old_proxy.copy(),
+                    'proxy': copy.deepcopy(old_proxy),
                     'old_name': old_proxy['name'],
                     'dc_base': 'Unknown',
                     'country': 'UN',
@@ -129,58 +135,73 @@ def main():
                     'port': port
                 })
 
-    print(f"Generated {len(candidate_list)} target servers. Starting Deep Speed Test (Multi-Threaded)...")
-    print(f"Engine will use multi-source fallback (3 URLs) for maximum accuracy.")
+    print(f"Starting Single-Source Standard Test for {len(candidate_list)} generated nodes...")
     
-    successful_cands = []
+    tested_cands = []
     with concurrent.futures.ThreadPoolExecutor(max_workers=50) as executor:
         futures = [executor.submit(test_candidate, cand) for cand in candidate_list]
         for i, future in enumerate(concurrent.futures.as_completed(futures), 1):
             res = future.result()
-            if res['speed'] > 0:
-                successful_cands.append(res)
+            tested_cands.append(res)
+            if res['status'] == 'LIVE':
                 print(f"[{i}/{len(candidate_list)}] 🟢 LIVE: {res['proxy']['server']}:{res['port']} | {res['speed']} Mbps")
             else:
-                print(f"[{i}/{len(candidate_list)}] 🔴 DEAD: {res['proxy']['server']}:{res['port']} | Err: {res.get('error', 'Unknown')}")
+                print(f"[{i}/{len(candidate_list)}] 🔴 DEAD: {res['proxy']['server']}:{res['port']} | Err: {res.get('error', '')}")
 
-    successful_cands.sort(key=lambda x: x['speed'], reverse=True)
-    final_proxies = []
-    old_name_to_new_names = defaultdict(list)
+    # مرتب‌سازی کل نتایج بر اساس سرعت (نزولی)
+    tested_cands.sort(key=lambda x: x['speed'], reverse=True)
     
-    for cand in successful_cands:
+    # متغیرهای مربوط به فایل tested.yaml
+    live_proxies = []
+    live_name_mapping = defaultdict(list)
+    
+    # متغیرهای مربوط به فایل all.yaml
+    all_proxies = []
+    all_name_mapping = defaultdict(list)
+    
+    for cand in tested_cands:
         flag = FLAGS.get(cand['country'], "🏳️")
         dc_title = cand['dc_base'].replace('-', ' ').title()
+        base_title = f"{dc_title} {cand['num']}" if cand['num'] > 0 else cand['proxy']['server']
         
-        if cand['num'] > 0:
-            new_name = f"[{flag}] {cand['country']} - {dc_title} {cand['num']}:{cand['port']} - {cand['speed']}Mbps"
-        else:
-            new_name = f"[{flag}] {cand['country']} - {cand['proxy']['server']} - {cand['speed']}Mbps"
-        
-        cand['proxy']['name'] = new_name
-        final_proxies.append(cand['proxy'])
-        old_name_to_new_names[cand['old_name']].append(new_name)
-        
-    clash_data['proxies'] = final_proxies
-    print(f"\n======================================")
-    print(f"Filtered down to {len(final_proxies)} working proxies.")
-
-    if 'proxy-groups' in clash_data:
-        for group in clash_data['proxy-groups']:
-            if 'proxies' not in group: continue
-            new_group_proxies = []
-            for p_name in group['proxies']:
-                if p_name in original_proxy_names:
-                    new_group_proxies.extend(old_name_to_new_names.get(p_name, []))
-                else:
-                    new_group_proxies.append(p_name)
+        if cand['status'] == 'LIVE':
+            new_name = f"[{flag}] {cand['country']} - {base_title}:{cand['port']} - {cand['speed']}Mbps"
+            cand['proxy']['name'] = new_name
             
-            seen = set()
-            group['proxies'] = [x for x in new_group_proxies if not (x in seen or seen.add(x))]
+            live_proxies.append(cand['proxy'])
+            live_name_mapping[cand['old_name']].append(new_name)
+            
+            all_proxies.append(copy.deepcopy(cand['proxy']))
+            all_name_mapping[cand['old_name']].append(new_name)
+            
+        else:
+            # فرمت برای کانفیگ‌های مرده در فایل all
+            new_name = f"[🔴] {cand['country']} - {base_title}:{cand['port']} - DEAD ({cand.get('error', 'Unknown')})"
+            cand['proxy']['name'] = new_name
+            
+            all_proxies.append(copy.deepcopy(cand['proxy']))
+            all_name_mapping[cand['old_name']].append(new_name)
 
-    with open('out.yaml', 'w', encoding='utf-8') as f:
-        yaml.dump(clash_data, f, allow_unicode=True, sort_keys=False, default_flow_style=False)
+    print(f"\n======================================")
+    print(f"Scan Completed: {len(live_proxies)} LIVE | {len(all_proxies) - len(live_proxies)} DEAD")
+
+    # ساخت فایل tested.yaml (فقط سالم‌ها)
+    tested_clash_data = copy.deepcopy(base_clash_data)
+    tested_clash_data['proxies'] = live_proxies
+    tested_clash_data = rebuild_clash_groups(tested_clash_data, live_name_mapping, original_proxy_names)
+    
+    with open('tested.yaml', 'w', encoding='utf-8') as f:
+        yaml.dump(tested_clash_data, f, allow_unicode=True, sort_keys=False, default_flow_style=False)
         
-    print("Process Finished Successfully! Saved to out.yaml")
+    # ساخت فایل all.yaml (همه کانفیگ‌ها)
+    all_clash_data = copy.deepcopy(base_clash_data)
+    all_clash_data['proxies'] = all_proxies
+    all_clash_data = rebuild_clash_groups(all_clash_data, all_name_mapping, original_proxy_names)
+    
+    with open('all.yaml', 'w', encoding='utf-8') as f:
+        yaml.dump(all_clash_data, f, allow_unicode=True, sort_keys=False, default_flow_style=False)
+
+    print("Success! Saved as `tested.yaml` and `all.yaml`.")
 
 if __name__ == "__main__":
     main()
