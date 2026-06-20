@@ -1,0 +1,859 @@
+# ==========================================
+# VeePN - Ultimate Uncompressed Config (46 Nodes)
+# ==========================================
+port: 7890
+socks-port: 7891
+allow-lan: false
+mode: rule
+log-level: info
+
+proxies:
+  # 🇺🇸 --- United States (Virginia & Oregon) ---
+  - name: "🇺🇸 US - Trout East 4 (Base)"
+    type: http
+    server: trout-east-4-us.maxxxcdn.com
+    port: 10799
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇺🇸 US - Trout East 4 (Port: 52837)"
+    type: http
+    server: trout-east-4-us.maxxxcdn.com
+    port: 52837
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇺🇸 US - Trout East 5 (Port: 46845)"
+    type: http
+    server: trout-east-5-us.maxxxcdn.com
+    port: 46845
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇺🇸 US - Trout East 5 (Port: 31643)"
+    type: http
+    server: trout-east-5-us.maxxxcdn.com
+    port: 31643
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇺🇸 US - Trout East 6"
+    type: http
+    server: trout-east-6-us.maxxxcdn.com
+    port: 36821
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇺🇸 US - Trout East 7"
+    type: http
+    server: trout-east-7-us.maxxxcdn.com
+    port: 64337
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇺🇸 US - Mackerel 6 (Port: 51811)"
+    type: http
+    server: mackerel-6-us.maxxxcdn.com
+    port: 51811
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇺🇸 US - Mackerel 6 (Port: 14063)"
+    type: http
+    server: mackerel-6-us.maxxxcdn.com
+    port: 14063
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇺🇸 US - Mackerel 6 (Port: 13843)"
+    type: http
+    server: mackerel-6-us.maxxxcdn.com
+    port: 13843
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇺🇸 US - Mackerel 7 (Port: 52379)"
+    type: http
+    server: mackerel-7-us.maxxxcdn.com
+    port: 52379
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇺🇸 US - Mackerel 7 (Port: 56639)"
+    type: http
+    server: mackerel-7-us.maxxxcdn.com
+    port: 56639
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇺🇸 US - Mackerel 7 (Port: 18035)"
+    type: http
+    server: mackerel-7-us.maxxxcdn.com
+    port: 18035
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇺🇸 US - Prime (Port: 18113)"
+    type: http
+    server: prime-us.maxxxcdn.com
+    port: 18113
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇺🇸 US - Prime (Port: 32376)"
+    type: http
+    server: prime-us.maxxxcdn.com
+    port: 32376
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇺🇸 US - Trout West 3 (Oregon)"
+    type: http
+    server: trout-west-3-us.maxxxcdn.com
+    port: 36179
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇺🇸 US - Trout West 4 (Oregon)"
+    type: http
+    server: trout-west-4-us.maxxxcdn.com
+    port: 21229
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇺🇸 US - Trout West 5 (Oregon)"
+    type: http
+    server: trout-west-5-us.maxxxcdn.com
+    port: 23993
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  # 🇬🇧 --- United Kingdom ---
+  - name: "🇬🇧 UK - Erith 2 (Port: 61017)"
+    type: http
+    server: erith-2-uk.maxxxcdn.com
+    port: 61017
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇬🇧 UK - Erith 2 (Port: 39161)"
+    type: http
+    server: erith-2-uk.maxxxcdn.com
+    port: 39161
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇬🇧 UK - Erith 2 (Port: 49738)"
+    type: http
+    server: erith-2-uk.maxxxcdn.com
+    port: 49738
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇬🇧 UK - Erith 3 (Port: 49723)"
+    type: http
+    server: erith-3-uk.maxxxcdn.com
+    port: 49723
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇬🇧 UK - Erith 3 (Port: 25583)"
+    type: http
+    server: erith-3-uk.maxxxcdn.com
+    port: 25583
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇬🇧 UK - Erith 4 (Port: 20155)"
+    type: http
+    server: erith-4-uk.maxxxcdn.com
+    port: 20155
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇬🇧 UK - Erith 4 (Port: 13407)"
+    type: http
+    server: erith-4-uk.maxxxcdn.com
+    port: 13407
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇬🇧 UK - Erith 4 (Port: 55881)"
+    type: http
+    server: erith-4-uk.maxxxcdn.com
+    port: 55881
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇬🇧 UK - Erith 5 (Port: 10799)"
+    type: http
+    server: erith-5-uk.maxxxcdn.com
+    port: 10799
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇬🇧 UK - Erith 5 (Port: 47168)"
+    type: http
+    server: erith-5-uk.maxxxcdn.com
+    port: 47168
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇬🇧 UK - Erith 5 (Port: 12610)"
+    type: http
+    server: erith-5-uk.maxxxcdn.com
+    port: 12610
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇬🇧 UK - Erith 6 (Port: 10799)"
+    type: http
+    server: erith-6-uk.maxxxcdn.com
+    port: 10799
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇬🇧 UK - Erith 6 (Port: 12317)"
+    type: http
+    server: erith-6-uk.maxxxcdn.com
+    port: 12317
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  # 🇫🇷 --- France ---
+  - name: "🇫🇷 FR - Parisian 1 (Port: 26394)"
+    type: http
+    server: parisian-1-fr.maxxxcdn.com
+    port: 26394
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇫🇷 FR - Parisian 1 (Port: 29390)"
+    type: http
+    server: parisian-1-fr.maxxxcdn.com
+    port: 29390
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇫🇷 FR - Parisian 1 (Port: 49303)"
+    type: http
+    server: parisian-1-fr.maxxxcdn.com
+    port: 49303
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇫🇷 FR - Parisian 2 (Port: 63239)"
+    type: http
+    server: parisian-2-fr.maxxxcdn.com
+    port: 63239
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇫🇷 FR - Parisian 2 (Port: 31921)"
+    type: http
+    server: parisian-2-fr.maxxxcdn.com
+    port: 31921
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇫🇷 FR - Parisian 2 (Port: 39983)"
+    type: http
+    server: parisian-2-fr.maxxxcdn.com
+    port: 39983
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇫🇷 FR - Parisian 2 (Port: 10799)"
+    type: http
+    server: parisian-2-fr.maxxxcdn.com
+    port: 10799
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇫🇷 FR - Parisian 3 (Port: 47425)"
+    type: http
+    server: parisian-3-fr.maxxxcdn.com
+    port: 47425
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇫🇷 FR - Parisian 3 (Port: 21157)"
+    type: http
+    server: parisian-3-fr.maxxxcdn.com
+    port: 21157
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇫🇷 FR - Camembert 2 (Port: 26477)"
+    type: http
+    server: camembert-2-fr.maxxxcdn.com
+    port: 26477
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇫🇷 FR - Camembert 2 (Port: 20590)"
+    type: http
+    server: camembert-2-fr.maxxxcdn.com
+    port: 20590
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇫🇷 FR - Camembert 3 (Port: 55541)"
+    type: http
+    server: camembert-3-fr.maxxxcdn.com
+    port: 55541
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇫🇷 FR - Camembert 3 (Port: 37289)"
+    type: http
+    server: camembert-3-fr.maxxxcdn.com
+    port: 37289
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇫🇷 FR - Camembert 3 (Port: 40547)"
+    type: http
+    server: camembert-3-fr.maxxxcdn.com
+    port: 40547
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇫🇷 FR - Camembert 3 (Port: 12635)"
+    type: http
+    server: camembert-3-fr.maxxxcdn.com
+    port: 12635
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇫🇷 FR - Camembert 4 (Port: 42873)"
+    type: http
+    server: camembert-4-fr.maxxxcdn.com
+    port: 42873
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇫🇷 FR - Camembert 4 (Port: 48141)"
+    type: http
+    server: camembert-4-fr.maxxxcdn.com
+    port: 48141
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇫🇷 FR - Camembert 5 (Port: 40947)"
+    type: http
+    server: camembert-5-fr.maxxxcdn.com
+    port: 40947
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇫🇷 FR - Camembert 5 (Port: 45504)"
+    type: http
+    server: camembert-5-fr.maxxxcdn.com
+    port: 45504
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇫🇷 FR - Camembert 5 (Port: 10799)"
+    type: http
+    server: camembert-5-fr.maxxxcdn.com
+    port: 10799
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇫🇷 FR - Camembert 5 (Port: 22921)"
+    type: http
+    server: camembert-5-fr.maxxxcdn.com
+    port: 22921
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇫🇷 FR - Camembert 6"
+    type: http
+    server: camembert-6-fr.maxxxcdn.com
+    port: 15094
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇫🇷 FR - Camembert 7"
+    type: http
+    server: camembert-7-fr.maxxxcdn.com
+    port: 24791
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  # 🇳🇱 --- Netherlands ---
+  - name: "🇳🇱 NL - Maasdam 1"
+    type: http
+    server: maasdam-1-nl.maxxxcdn.com
+    port: 57791
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇳🇱 NL - Maasdam 4 (Port: 26589)"
+    type: http
+    server: maasdam-4-nl.maxxxcdn.com
+    port: 26589
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇳🇱 NL - Maasdam 4 (Port: 10799)"
+    type: http
+    server: maasdam-4-nl.maxxxcdn.com
+    port: 10799
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇳🇱 NL - Maasdam 4 (Port: 62841)"
+    type: http
+    server: maasdam-4-nl.maxxxcdn.com
+    port: 62841
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇳🇱 NL - Maasdam 5 (Port: 38099)"
+    type: http
+    server: maasdam-5-nl.maxxxcdn.com
+    port: 38099
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇳🇱 NL - Maasdam 5 (Port: 25173)"
+    type: http
+    server: maasdam-5-nl.maxxxcdn.com
+    port: 25173
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇳🇱 NL - Maasdam 6"
+    type: http
+    server: maasdam-6-nl.maxxxcdn.com
+    port: 16723
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇳🇱 NL - Maasdam 7"
+    type: http
+    server: maasdam-7-nl.maxxxcdn.com
+    port: 50461
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇳🇱 NL - Maasdam 8"
+    type: http
+    server: maasdam-8-nl.maxxxcdn.com
+    port: 23204
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇳🇱 NL - Maasdam 9 (Port: 22029)"
+    type: http
+    server: maasdam-9-nl.maxxxcdn.com
+    port: 22029
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇳🇱 NL - Maasdam 9 (Port: 52418)"
+    type: http-nl
+    server: maasdam-9-nl.maxxxcdn.com
+    port: 52418
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇳🇱 NL - Hollander 3 (Port: 59504)"
+    type: http
+    server: hollander-3-nl.maxxxcdn.com
+    port: 59504
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇳🇱 NL - Hollander 3 (Port: 18351)"
+    type: http
+    server: hollander-3-nl.maxxxcdn.com
+    port: 18351
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇳🇱 NL - Hollander 5"
+    type: http
+    server: hollander-5-nl.maxxxcdn.com
+    port: 18569
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇳🇱 NL - Hollander 6"
+    type: http
+    server: hollander-6-nl.maxxxcdn.com
+    port: 61965
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇳🇱 NL - Hollander 6 (Port: 10799)"
+    type: http
+    server: hollander-6-nl.maxxxcdn.com
+    port: 10799
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇳🇱 NL - Hollander 7"
+    type: http
+    server: hollander-7-nl.maxxxcdn.com
+    port: 43357
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇳🇱 NL - Hollander 8"
+    type: http
+    server: hollander-8-nl.maxxxcdn.com
+    port: 48191
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  # 🇸🇬 --- Singapore ---
+  - name: "🇸🇬 SG - Octopus 1"
+    type: http
+    server: octopus-1-sg.maxxxcdn.com
+    port: 24267
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇸🇬 SG - Octopus 1 (Port: 58520)"
+    type: http
+    server: octopus-1-sg.maxxxcdn.com
+    port: 58520
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇸🇬 SG - Octopus 2"
+    type: http
+    server: octopus-2-sg.maxxxcdn.com
+    port: 14131
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇸🇬 SG - Octopus 3"
+    type: http
+    server: octopus-3-sg.maxxxcdn.com
+    port: 19214
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇸🇬 SG - Octopus 4 (Port: 26017)"
+    type: http
+    server: octopus-4-sg.maxxxcdn.com
+    port: 26017
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇸🇬 SG - Octopus 4 (Port: 20724)"
+    type: http
+    server: octopus-4-sg.maxxxcdn.com
+    port: 20724
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇸🇬 SG - Octopus 4 (Port: 16446)"
+    type: http
+    server: octopus-4-sg.maxxxcdn.com
+    port: 16446
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇸🇬 SG - Octopus 5 (Port: 18240)"
+    type: http
+    server: octopus-5-sg.maxxxcdn.com
+    port: 18240
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇸🇬 SG - Octopus 5 (Port: 59044)"
+    type: http
+    server: octopus-5-sg.maxxxcdn.com
+    port: 59044
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇸🇬 SG - Naga (Port: 52829)"
+    type: http
+    server: naga-sg.maxxxcdn.com
+    port: 52829
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇸🇬 SG - Naga (Port: 27595)"
+    type: http
+    server: naga-sg.maxxxcdn.com
+    port: 27595
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇸🇬 SG - Signum"
+    type: http
+    server: signum-sg.maxxxcdn.com
+    port: 18980
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇸🇬 SG - Singha"
+    type: http
+    server: singha-sg.maxxxcdn.com
+    port: 22555
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  # 🇷🇺 --- Russia ---
+  - name: "🇷🇺 RU - Brolen (Moscow)"
+    type: http
+    server: brolen-ru.maxxxcdn.com
+    port: 18808
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+  - name: "🇷🇺 RU - Chalo (Saint Petersburg)"
+    type: http
+    server: chalo-ru.maxxxcdn.com
+    port: 35266
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+
+# ==========================================
+# proxy-groups (گروه‌بندی هوشمند)
+# ==========================================
+proxy-groups:
+  - name: "🌍 Select Location"
+    type: select
+    proxies:
+      - "🚀 Auto-Best (Global)"
+      - "🇺🇸 Auto-US"
+      - "🇬🇧 Auto-UK"
+      - "🇫🇷 Auto-FR"
+      - "🇳🇱 Auto-NL"
+      - "🇸🇬 Auto-SG"
+      - "🇷🇺 Auto-RU"
+      - DIRECT
+
+  - name: "🚀 Auto-Best (Global)"
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - "🇺🇸 Auto-US"
+      - "🇬🇧 Auto-UK"
+      - "🇫🇷 Auto-FR"
+      - "🇳🇱 Auto-NL"
+      - "🇸🇬 Auto-SG"
+      - "🇷🇺 Auto-RU"
+
+  - name: "🇺🇸 Auto-US"
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - "🇺🇸 US - Trout East 4 (Base)"
+      - "🇺🇸 US - Trout East 4 (Port: 52837)"
+      - "🇺🇸 US - Trout East 5 (Port: 46845)"
+      - "🇺🇸 US - Trout East 5 (Port: 31643)"
+      - "🇺🇸 US - Trout East 6"
+      - "🇺🇸 US - Trout East 7"
+      - "🇺🇸 US - Mackerel 6 (Port: 51811)"
+      - "🇺🇸 US - Mackerel 6 (Port: 14063)"
+      - "🇺🇸 US - Mackerel 6 (Port: 13843)"
+      - "🇺🇸 US - Mackerel 7 (Port: 52379)"
+      - "🇺🇸 US - Mackerel 7 (Port: 56639)"
+      - "🇺🇸 US - Mackerel 7 (Port: 18035)"
+      - "🇺🇸 US - Prime (Port: 18113)"
+      - "🇺🇸 US - Prime (Port: 32376)"
+      - "🇺🇸 US - Trout West 3 (Oregon)"
+      - "🇺🇸 US - Trout West 4 (Oregon)"
+      - "🇺🇸 US - Trout West 5 (Oregon)"
+
+  - name: "🇬🇧 Auto-UK"
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - "🇬🇧 UK - Erith 2 (Port: 61017)"
+      - "🇬🇧 UK - Erith 2 (Port: 39161)"
+      - "🇬🇧 UK - Erith 2 (Port: 49738)"
+      - "🇬🇧 UK - Erith 3 (Port: 49723)"
+      - "🇬🇧 UK - Erith 3 (Port: 25583)"
+      - "🇬🇧 UK - Erith 4 (Port: 20155)"
+      - "🇬🇧 UK - Erith 4 (Port: 13407)"
+      - "🇬🇧 UK - Erith 4 (Port: 55881)"
+      - "🇬🇧 UK - Erith 5 (Port: 10799)"
+      - "🇬🇧 UK - Erith 5 (Port: 47168)"
+      - "🇬🇧 UK - Erith 5 (Port: 12610)"
+      - "🇬🇧 UK - Erith 6 (Port: 10799)"
+      - "🇬🇧 UK - Erith 6 (Port: 12317)"
+
+  - name: "🇫🇷 Auto-FR"
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - "🇫🇷 FR - Parisian 1 (Port: 26394)"
+      - "🇫🇷 FR - Parisian 1 (Port: 29390)"
+      - "🇫🇷 FR - Parisian 1 (Port: 49303)"
+      - "🇫🇷 FR - Parisian 2 (Port: 63239)"
+      - "🇫🇷 FR - Parisian 2 (Port: 31921)"
+      - "🇫🇷 FR - Parisian 2 (Port: 39983)"
+      - "🇫🇷 FR - Parisian 2 (Port: 10799)"
+      - "🇫🇷 FR - Parisian 3 (Port: 47425)"
+      - "🇫🇷 FR - Parisian 3 (Port: 21157)"
+      - "🇫🇷 FR - Camembert 2 (Port: 26477)"
+      - "🇫🇷 FR - Camembert 2 (Port: 20590)"
+      - "🇫🇷 FR - Camembert 3 (Port: 55541)"
+      - "🇫🇷 FR - Camembert 3 (Port: 37289)"
+      - "🇫🇷 FR - Camembert 3 (Port: 40547)"
+      - "🇫🇷 FR - Camembert 3 (Port: 12635)"
+      - "🇫🇷 FR - Camembert 4 (Port: 42873)"
+      - "🇫🇷 FR - Camembert 4 (Port: 48141)"
+      - "🇫🇷 FR - Camembert 5 (Port: 40947)"
+      - "🇫🇷 FR - Camembert 5 (Port: 45504)"
+      - "🇫🇷 FR - Camembert 5 (Port: 10799)"
+      - "🇫🇷 FR - Camembert 5 (Port: 22921)"
+      - "🇫🇷 FR - Camembert 6"
+      - "🇫🇷 FR - Camembert 7"
+
+  - name: "🇳🇱 Auto-NL"
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - "🇳🇱 NL - Maasdam 1"
+      - "🇳🇱 NL - Maasdam 4 (Port: 26589)"
+      - "🇳🇱 NL - Maasdam 4 (Port: 10799)"
+      - "🇳🇱 NL - Maasdam 4 (Port: 62841)"
+      - "🇳🇱 NL - Maasdam 5 (Port: 38099)"
+      - "🇳🇱 NL - Maasdam 5 (Port: 25173)"
+      - "🇳🇱 NL - Maasdam 6"
+      - "🇳🇱 NL - Maasdam 7"
+      - "🇳🇱 NL - Maasdam 8"
+      - "🇳🇱 NL - Maasdam 9 (Port: 22029)"
+      - "🇳🇱 NL - Maasdam 9 (Port: 52418)"
+      - "🇳🇱 NL - Hollander 3 (Port: 59504)"
+      - "🇳🇱 NL - Hollander 3 (Port: 18351)"
+      - "🇳🇱 NL - Hollander 5"
+      - "🇳🇱 NL - Hollander 6"
+      - "🇳🇱 NL - Hollander 6 (Port: 10799)"
+      - "🇳🇱 NL - Hollander 7"
+      - "🇳🇱 NL - Hollander 8"
+
+  - name: "🇸🇬 Auto-SG"
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - "🇸🇬 SG - Octopus 1"
+      - "🇸🇬 SG - Octopus 1 (Port: 58520)"
+      - "🇸🇬 SG - Octopus 2"
+      - "🇸🇬 SG - Octopus 3"
+      - "🇸🇬 SG - Octopus 4 (Port: 26017)"
+      - "🇸🇬 SG - Octopus 4 (Port: 20724)"
+      - "🇸🇬 SG - Octopus 4 (Port: 16446)"
+      - "🇸🇬 SG - Octopus 5 (Port: 18240)"
+      - "🇸🇬 SG - Octopus 5 (Port: 59044)"
+      - "🇸🇬 SG - Naga (Port: 52829)"
+      - "🇸🇬 SG - Naga (Port: 27595)"
+      - "🇸🇬 SG - Signum"
+      - "🇸🇬 SG - Singha"
+
+  - name: "🇷🇺 Auto-RU"
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - "🇷🇺 RU - Brolen (Moscow)"
+      - "🇷🇺 RU - Chalo (Saint Petersburg)"
+
+# ==========================================
+# rules (قوانین مسیریابی)
+# ==========================================
+rules:
+  - MATCH,🌍 Select Location
