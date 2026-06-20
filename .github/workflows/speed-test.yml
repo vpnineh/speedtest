@@ -1,7 +1,7 @@
-name: Ultimate Deep Proxy Scanner
+name: Standard Proxy Scanner (tested & all)
 
 on:
-  workflow_dispatch: # بدون تایمر، کاملا دستی
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -24,13 +24,16 @@ jobs:
         python -m pip install --upgrade pip
         pip install requests pyyaml
 
-    - name: Execute Deep Scanner Engine
+    - name: Execute Standard Scanner Engine
       run: python speed_test.py
 
-    - name: Commit and Push Results (out.yaml)
+    - name: Commit and Push Results
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
-        git add out.yaml
-        git commit -m "chore: deep scan 1 to 10 completed and bad nodes filtered" || echo "No changes"
+        
+        # این خط حیاتی است و به گیت می‌گوید هر دو فایل را روی ریپازیتوری شما ذخیره کند
+        git add tested.yaml all.yaml
+        
+        git commit -m "update: standard scan completed [tested.yaml & all.yaml]" || echo "No changes"
         git push
