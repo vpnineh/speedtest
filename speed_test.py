@@ -1,4 +1,5 @@
 import yaml
+import json
 import requests
 import time
 import re
@@ -7,7 +8,6 @@ import concurrent.futures
 import copy
 from collections import defaultdict
 
-# خاموش کردن هشدارهای SSL برای دامنه‌های تولید شده
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 FLAGS = {
@@ -15,7 +15,6 @@ FLAGS = {
     "NL": "🇳🇱", "SG": "🇸🇬", "RU": "🇷🇺", "DE": "🇩🇪"
 }
 
-# قفل شده روی معتبرترین سورس برای ربات‌ها
 TEST_URL = "http://cachefly.cachefly.net/10mb.test"
 TIMEOUT = 12
 
@@ -46,7 +45,6 @@ def test_candidate(cand):
         cand['speed'] = round(mbps, 1)
         cand['status'] = 'LIVE'
         return cand
-        
     except Exception as e:
         cand['speed'] = 0.0
         cand['status'] = 'DEAD'
@@ -62,22 +60,88 @@ def test_candidate(cand):
         return cand
 
 def rebuild_clash_groups(clash_dict, name_mapping, original_names):
-    """بازسازی گروه‌های کلش بر اساس نام‌های جدید"""
     if 'proxy-groups' in clash_dict:
         for group in clash_dict['proxy-groups']:
             if 'proxies' not in group: continue
             new_group_proxies = []
             for p_name in group['proxies']:
                 if p_name in original_names:
-                    # جایگزینی با نام‌های جدید تولید شده
                     new_group_proxies.extend(name_mapping.get(p_name, []))
                 else:
                     new_group_proxies.append(p_name)
-            
-            # حذف موارد تکراری ضمن حفظ ترتیب سرعت
             seen = set()
             group['proxies'] = [x for x in new_group_proxies if not (x in seen or seen.add(x))]
     return clash_dict
+
+def generate_singbox_config(live_proxies, filename="tested-singbox.json"):
+    """تولید فایل سینگ‌باکس با قالب درخواستی کاربر"""
+    outbounds = []
+    proxy_tags = []
+
+    for p in live_proxies:
+        if p.get('type') == 'http':
+            server_name = p.get('sni') or p.get('server')
+            tag = p['name']
+            
+            singbox_proxy = {
+                "type": "http",
+                "tag": tag,
+                "server": p['server'],
+                "server_port": p['port'],
+                "username": p.get('username', ''),
+                "password": p.get('password', ''),
+                "tls": {
+                    "enabled": p.get('tls', False),
+                    "server_name": server_name,
+                    "insecure": p.get('skip-cert-verify', True),
+                    "utls": {
+                        "enabled": True,
+                        "fingerprint": "chrome"
+                    }
+                }
+            }
+            outbounds.append(singbox_proxy)
+            proxy_tags.append(tag)
+
+    full_config = {
+        "log": {"level": "info"},
+        "dns": {
+            "servers": [
+                {"tag": "dns_google", "address": "8.8.8.8", "detour": "🚀 Select Server"},
+                {"tag": "dns_local", "address": "1.1.1.1", "detour": "direct"}
+            ]
+        },
+        "inbounds": [
+            {
+                "type": "tun",
+                "tag": "tun-in",
+                "interface_name": "tun0",
+                "inet4_address": "172.19.0.1/30",
+                "auto_route": True,
+                "strict_route": True,
+                "sniff": True
+            }
+        ],
+        "outbounds": [
+            {
+                "type": "selector",
+                "tag": "🚀 Select Server",
+                "outbounds": proxy_tags
+            },
+            {"type": "direct", "tag": "direct"},
+            {"type": "block", "tag": "block"}
+        ] + outbounds,
+        "route": {
+            "rules": [
+                {"geosite": ["ir"], "outbound": "direct"},
+                {"geoip": ["ir"], "outbound": "direct"}
+            ],
+            "auto_detect_interface": True
+        }
+    }
+
+    with open(filename, 'w', encoding='utf-8') as f:
+        json.dump(full_config, f, indent=2, ensure_ascii=False)
 
 def main():
     print("Loading vpnlist.yaml...")
@@ -94,11 +158,9 @@ def main():
     seen_server_ports = set()
 
     print("Offline Parsing: Generating 1 to 10 nodes for each server...")
-    
     for old_proxy in original_proxies:
         server = old_proxy.get('server', '')
         port = old_proxy.get('port', 0)
-        
         match = re.match(r'^([a-zA-Z0-9-]+?)(?:-\d+)?-([a-zA-Z]{2})\.maxxxcdn\.com$', server)
         
         if match:
@@ -107,7 +169,6 @@ def main():
             for i in range(1, 11):
                 new_server = f"{dc_base}-{i}-{country.lower()}.maxxxcdn.com"
                 combo = f"{new_server}:{port}"
-                
                 if combo in seen_server_ports: continue
                 seen_server_ports.add(combo)
                 
@@ -115,24 +176,16 @@ def main():
                 new_proxy['server'] = new_server
                 
                 candidate_list.append({
-                    'proxy': new_proxy,
-                    'old_name': old_proxy['name'],
-                    'dc_base': dc_base,
-                    'country': country,
-                    'num': i,
-                    'port': port
+                    'proxy': new_proxy, 'old_name': old_proxy['name'],
+                    'dc_base': dc_base, 'country': country, 'num': i, 'port': port
                 })
         else:
             combo = f"{server}:{port}"
             if combo not in seen_server_ports:
                 seen_server_ports.add(combo)
                 candidate_list.append({
-                    'proxy': copy.deepcopy(old_proxy),
-                    'old_name': old_proxy['name'],
-                    'dc_base': 'Unknown',
-                    'country': 'UN',
-                    'num': 0,
-                    'port': port
+                    'proxy': copy.deepcopy(old_proxy), 'old_name': old_proxy['name'],
+                    'dc_base': 'Unknown', 'country': 'UN', 'num': 0, 'port': port
                 })
 
     print(f"Starting Single-Source Standard Test for {len(candidate_list)} generated nodes...")
@@ -146,16 +199,12 @@ def main():
             if res['status'] == 'LIVE':
                 print(f"[{i}/{len(candidate_list)}] 🟢 LIVE: {res['proxy']['server']}:{res['port']} | {res['speed']} Mbps")
             else:
-                print(f"[{i}/{len(candidate_list)}] 🔴 DEAD: {res['proxy']['server']}:{res['port']} | Err: {res.get('error', '')}")
+                pass # برای خلوت شدن لاگ، مرده‌ها را چاپ نمی‌کنیم
 
-    # مرتب‌سازی کل نتایج بر اساس سرعت (نزولی)
     tested_cands.sort(key=lambda x: x['speed'], reverse=True)
     
-    # متغیرهای مربوط به فایل tested.yaml
     live_proxies = []
     live_name_mapping = defaultdict(list)
-    
-    # متغیرهای مربوط به فایل all.yaml
     all_proxies = []
     all_name_mapping = defaultdict(list)
     
@@ -167,41 +216,37 @@ def main():
         if cand['status'] == 'LIVE':
             new_name = f"[{flag}] {cand['country']} - {base_title}:{cand['port']} - {cand['speed']}Mbps"
             cand['proxy']['name'] = new_name
-            
             live_proxies.append(cand['proxy'])
             live_name_mapping[cand['old_name']].append(new_name)
-            
             all_proxies.append(copy.deepcopy(cand['proxy']))
             all_name_mapping[cand['old_name']].append(new_name)
-            
         else:
-            # فرمت برای کانفیگ‌های مرده در فایل all
             new_name = f"[🔴] {cand['country']} - {base_title}:{cand['port']} - DEAD ({cand.get('error', 'Unknown')})"
             cand['proxy']['name'] = new_name
-            
             all_proxies.append(copy.deepcopy(cand['proxy']))
             all_name_mapping[cand['old_name']].append(new_name)
 
     print(f"\n======================================")
     print(f"Scan Completed: {len(live_proxies)} LIVE | {len(all_proxies) - len(live_proxies)} DEAD")
 
-    # ساخت فایل tested.yaml (فقط سالم‌ها)
+    # ذخیره فایل tested.yaml
     tested_clash_data = copy.deepcopy(base_clash_data)
     tested_clash_data['proxies'] = live_proxies
     tested_clash_data = rebuild_clash_groups(tested_clash_data, live_name_mapping, original_proxy_names)
-    
     with open('tested.yaml', 'w', encoding='utf-8') as f:
         yaml.dump(tested_clash_data, f, allow_unicode=True, sort_keys=False, default_flow_style=False)
         
-    # ساخت فایل all.yaml (همه کانفیگ‌ها)
+    # ذخیره فایل all.yaml
     all_clash_data = copy.deepcopy(base_clash_data)
     all_clash_data['proxies'] = all_proxies
     all_clash_data = rebuild_clash_groups(all_clash_data, all_name_mapping, original_proxy_names)
-    
     with open('all.yaml', 'w', encoding='utf-8') as f:
         yaml.dump(all_clash_data, f, allow_unicode=True, sort_keys=False, default_flow_style=False)
 
-    print("Success! Saved as `tested.yaml` and `all.yaml`.")
+    # ساخت فایل سینگ‌باکس Karing (فقط با سرورهای زنده)
+    generate_singbox_config(live_proxies, "tested-singbox.json")
+
+    print("Success! Saved as `tested.yaml`, `all.yaml`, and `tested-singbox.json`.")
 
 if __name__ == "__main__":
     main()
