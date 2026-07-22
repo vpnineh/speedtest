@@ -1,137 +1,137 @@
 # VeePN Full List
-# Updated: 2026-07-21T19:21:54.939Z
+# Updated: 2026-07-22T05:27:58.575Z
 # Total: 19
 proxies:
   - name: "USA, Oregon - 1"
+    type: http
+    server: trout-west-4-us.maxxxcdn.com
+    port: 39142
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+  - name: "USA, Oregon - 2"
     type: http
     server: trout-west-3-us.maxxxcdn.com
     port: 48968
     username: "1efcc00c71121558bc71d33b9695487c"
     password: "v1TOxzh1zWK1tcq2"
     tls: true
-  - name: "USA, Oregon - 2"
-    type: http
-    server: trout-west-1-us.maxxxcdn.com
-    port: 21028
-    username: "1efcc00c71121558bc71d33b9695487c"
-    password: "v1TOxzh1zWK1tcq2"
-    tls: true
   - name: "USA, Oregon - 3"
     type: http
     server: trout-west-2-us.maxxxcdn.com
-    port: 37816
+    port: 54644
     username: "1efcc00c71121558bc71d33b9695487c"
     password: "v1TOxzh1zWK1tcq2"
     tls: true
   - name: "United States, Virginia - 1"
     type: http
-    server: trout-east-6-us.maxxxcdn.com
-    port: 24725
+    server: trout-east-5-us.maxxxcdn.com
+    port: 44234
     username: "1efcc00c71121558bc71d33b9695487c"
     password: "v1TOxzh1zWK1tcq2"
     tls: true
   - name: "United States, Virginia - 2"
     type: http
-    server: prime-us.maxxxcdn.com
-    port: 10536
+    server: trout-east-3-us.maxxxcdn.com
+    port: 47571
     username: "1efcc00c71121558bc71d33b9695487c"
     password: "v1TOxzh1zWK1tcq2"
     tls: true
   - name: "United States, Virginia - 3"
     type: http
-    server: trout-east-3-us.maxxxcdn.com
-    port: 28205
+    server: trout-east-7-us.maxxxcdn.com
+    port: 35917
     username: "1efcc00c71121558bc71d33b9695487c"
     password: "v1TOxzh1zWK1tcq2"
     tls: true
   - name: "United Kingdom, London - 1"
     type: http
-    server: erith-3-uk.maxxxcdn.com
-    port: 18830
+    server: erith-6-uk.maxxxcdn.com
+    port: 25755
     username: "1efcc00c71121558bc71d33b9695487c"
     password: "v1TOxzh1zWK1tcq2"
     tls: true
   - name: "United Kingdom, London - 2"
     type: http
     server: erith-2-uk.maxxxcdn.com
-    port: 33280
+    port: 31330
     username: "1efcc00c71121558bc71d33b9695487c"
     password: "v1TOxzh1zWK1tcq2"
     tls: true
   - name: "United Kingdom, London - 3"
     type: http
     server: erith-5-uk.maxxxcdn.com
-    port: 55278
+    port: 44212
     username: "1efcc00c71121558bc71d33b9695487c"
     password: "v1TOxzh1zWK1tcq2"
     tls: true
   - name: "France, Paris - 1"
     type: http
-    server: camembert-2-fr.maxxxcdn.com
-    port: 25475
+    server: parisian-1-fr.maxxxcdn.com
+    port: 33754
     username: "1efcc00c71121558bc71d33b9695487c"
     password: "v1TOxzh1zWK1tcq2"
     tls: true
   - name: "France, Paris - 2"
     type: http
-    server: camembert-5-fr.maxxxcdn.com
-    port: 13139
+    server: camembert-2-fr.maxxxcdn.com
+    port: 26160
     username: "1efcc00c71121558bc71d33b9695487c"
     password: "v1TOxzh1zWK1tcq2"
     tls: true
   - name: "France, Paris - 3"
     type: http
-    server: parisian-3-fr.maxxxcdn.com
-    port: 38609
+    server: camembert-4-fr.maxxxcdn.com
+    port: 48689
     username: "1efcc00c71121558bc71d33b9695487c"
     password: "v1TOxzh1zWK1tcq2"
     tls: true
   - name: "Netherlands, Amsterdam - 1"
     type: http
-    server: maasdam-8-nl.maxxxcdn.com
-    port: 16544
+    server: maasdam-5-nl.maxxxcdn.com
+    port: 59848
     username: "1efcc00c71121558bc71d33b9695487c"
     password: "v1TOxzh1zWK1tcq2"
     tls: true
   - name: "Netherlands, Amsterdam - 2"
     type: http
-    server: hollander-3-nl.maxxxcdn.com
-    port: 10926
+    server: maasdam-1-nl.maxxxcdn.com
+    port: 55454
     username: "1efcc00c71121558bc71d33b9695487c"
     password: "v1TOxzh1zWK1tcq2"
     tls: true
   - name: "Netherlands, Amsterdam - 3"
     type: http
-    server: hollander-8-nl.maxxxcdn.com
-    port: 41726
+    server: maasdam-3-nl.maxxxcdn.com
+    port: 11942
     username: "1efcc00c71121558bc71d33b9695487c"
     password: "v1TOxzh1zWK1tcq2"
     tls: true
   - name: "Russia, Moscow - 1"
     type: http
     server: brolen-ru.maxxxcdn.com
-    port: 45860
+    port: 55377
     username: "1efcc00c71121558bc71d33b9695487c"
     password: "v1TOxzh1zWK1tcq2"
     tls: true
   - name: "Singapore, Singapore - 1"
     type: http
-    server: naga-sg.maxxxcdn.com
-    port: 12108
+    server: octopus-3-sg.maxxxcdn.com
+    port: 32740
     username: "1efcc00c71121558bc71d33b9695487c"
     password: "v1TOxzh1zWK1tcq2"
     tls: true
   - name: "Singapore, Singapore - 2"
     type: http
-    server: octopus-5-sg.maxxxcdn.com
-    port: 39583
+    server: signum-sg.maxxxcdn.com
+    port: 41718
     username: "1efcc00c71121558bc71d33b9695487c"
     password: "v1TOxzh1zWK1tcq2"
     tls: true
   - name: "Singapore, Singapore - 3"
     type: http
-    server: singha-sg.maxxxcdn.com
-    port: 48611
+    server: octopus-1-sg.maxxxcdn.com
+    port: 58921
     username: "1efcc00c71121558bc71d33b9695487c"
     password: "v1TOxzh1zWK1tcq2"
     tls: true
