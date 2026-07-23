@@ -1,137 +1,137 @@
 # VeePN Full List
-# Updated: 2026-07-22T05:27:58.575Z
+# Updated: 2026-07-23T05:33:13.090Z
 # Total: 19
 proxies:
-  - name: "USA, Oregon - 1"
-    type: http
-    server: trout-west-4-us.maxxxcdn.com
-    port: 39142
-    username: "1efcc00c71121558bc71d33b9695487c"
-    password: "v1TOxzh1zWK1tcq2"
-    tls: true
-  - name: "USA, Oregon - 2"
-    type: http
-    server: trout-west-3-us.maxxxcdn.com
-    port: 48968
-    username: "1efcc00c71121558bc71d33b9695487c"
-    password: "v1TOxzh1zWK1tcq2"
-    tls: true
-  - name: "USA, Oregon - 3"
-    type: http
-    server: trout-west-2-us.maxxxcdn.com
-    port: 54644
-    username: "1efcc00c71121558bc71d33b9695487c"
-    password: "v1TOxzh1zWK1tcq2"
-    tls: true
   - name: "United States, Virginia - 1"
     type: http
-    server: trout-east-5-us.maxxxcdn.com
-    port: 44234
+    server: mackerel-7-us.nexorcdn.com
+    port: 58158
     username: "1efcc00c71121558bc71d33b9695487c"
     password: "v1TOxzh1zWK1tcq2"
     tls: true
   - name: "United States, Virginia - 2"
     type: http
-    server: trout-east-3-us.maxxxcdn.com
-    port: 47571
+    server: trout-east-3-us.nexorcdn.com
+    port: 41339
     username: "1efcc00c71121558bc71d33b9695487c"
     password: "v1TOxzh1zWK1tcq2"
     tls: true
   - name: "United States, Virginia - 3"
     type: http
-    server: trout-east-7-us.maxxxcdn.com
-    port: 35917
+    server: trout-east-6-us.nexorcdn.com
+    port: 35336
     username: "1efcc00c71121558bc71d33b9695487c"
     password: "v1TOxzh1zWK1tcq2"
     tls: true
-  - name: "United Kingdom, London - 1"
+  - name: "USA, Oregon - 1"
     type: http
-    server: erith-6-uk.maxxxcdn.com
-    port: 25755
+    server: trout-west-5-us.nexorcdn.com
+    port: 22630
     username: "1efcc00c71121558bc71d33b9695487c"
     password: "v1TOxzh1zWK1tcq2"
     tls: true
-  - name: "United Kingdom, London - 2"
+  - name: "USA, Oregon - 2"
     type: http
-    server: erith-2-uk.maxxxcdn.com
-    port: 31330
+    server: trout-west-3-us.nexorcdn.com
+    port: 53212
     username: "1efcc00c71121558bc71d33b9695487c"
     password: "v1TOxzh1zWK1tcq2"
     tls: true
-  - name: "United Kingdom, London - 3"
+  - name: "USA, Oregon - 3"
     type: http
-    server: erith-5-uk.maxxxcdn.com
-    port: 44212
+    server: trout-west-4-us.nexorcdn.com
+    port: 11660
     username: "1efcc00c71121558bc71d33b9695487c"
     password: "v1TOxzh1zWK1tcq2"
     tls: true
   - name: "France, Paris - 1"
     type: http
-    server: parisian-1-fr.maxxxcdn.com
-    port: 33754
+    server: parisian-1-fr.nexorcdn.com
+    port: 29928
     username: "1efcc00c71121558bc71d33b9695487c"
     password: "v1TOxzh1zWK1tcq2"
     tls: true
   - name: "France, Paris - 2"
     type: http
-    server: camembert-2-fr.maxxxcdn.com
-    port: 26160
+    server: camembert-7-fr.nexorcdn.com
+    port: 14728
     username: "1efcc00c71121558bc71d33b9695487c"
     password: "v1TOxzh1zWK1tcq2"
     tls: true
   - name: "France, Paris - 3"
     type: http
-    server: camembert-4-fr.maxxxcdn.com
-    port: 48689
+    server: camembert-4-fr.nexorcdn.com
+    port: 46674
     username: "1efcc00c71121558bc71d33b9695487c"
     password: "v1TOxzh1zWK1tcq2"
     tls: true
   - name: "Netherlands, Amsterdam - 1"
     type: http
-    server: maasdam-5-nl.maxxxcdn.com
-    port: 59848
+    server: maasdam-7-nl.nexorcdn.com
+    port: 36176
     username: "1efcc00c71121558bc71d33b9695487c"
     password: "v1TOxzh1zWK1tcq2"
     tls: true
   - name: "Netherlands, Amsterdam - 2"
     type: http
-    server: maasdam-1-nl.maxxxcdn.com
-    port: 55454
+    server: maasdam-1-nl.nexorcdn.com
+    port: 51833
     username: "1efcc00c71121558bc71d33b9695487c"
     password: "v1TOxzh1zWK1tcq2"
     tls: true
   - name: "Netherlands, Amsterdam - 3"
     type: http
-    server: maasdam-3-nl.maxxxcdn.com
-    port: 11942
+    server: hollander-8-nl.nexorcdn.com
+    port: 35248
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+  - name: "United Kingdom, London - 1"
+    type: http
+    server: erith-4-uk.nexorcdn.com
+    port: 59114
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+  - name: "United Kingdom, London - 2"
+    type: http
+    server: erith-5-uk.nexorcdn.com
+    port: 35068
+    username: "1efcc00c71121558bc71d33b9695487c"
+    password: "v1TOxzh1zWK1tcq2"
+    tls: true
+  - name: "United Kingdom, London - 3"
+    type: http
+    server: erith-3-uk.nexorcdn.com
+    port: 58626
     username: "1efcc00c71121558bc71d33b9695487c"
     password: "v1TOxzh1zWK1tcq2"
     tls: true
   - name: "Russia, Moscow - 1"
     type: http
-    server: brolen-ru.maxxxcdn.com
-    port: 55377
+    server: brolen-ru.nexorcdn.com
+    port: 40611
     username: "1efcc00c71121558bc71d33b9695487c"
     password: "v1TOxzh1zWK1tcq2"
     tls: true
   - name: "Singapore, Singapore - 1"
     type: http
-    server: octopus-3-sg.maxxxcdn.com
-    port: 32740
+    server: singha-sg.nexorcdn.com
+    port: 26702
     username: "1efcc00c71121558bc71d33b9695487c"
     password: "v1TOxzh1zWK1tcq2"
     tls: true
   - name: "Singapore, Singapore - 2"
     type: http
-    server: signum-sg.maxxxcdn.com
-    port: 41718
+    server: naga-sg.nexorcdn.com
+    port: 45361
     username: "1efcc00c71121558bc71d33b9695487c"
     password: "v1TOxzh1zWK1tcq2"
     tls: true
   - name: "Singapore, Singapore - 3"
     type: http
-    server: octopus-1-sg.maxxxcdn.com
-    port: 58921
+    server: octopus-5-sg.nexorcdn.com
+    port: 43580
     username: "1efcc00c71121558bc71d33b9695487c"
     password: "v1TOxzh1zWK1tcq2"
     tls: true
